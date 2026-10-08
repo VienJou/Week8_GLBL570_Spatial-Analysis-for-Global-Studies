@@ -1,0 +1,411 @@
+id,year,type_of_violence,conflict_name,side_a,side_b,country,region,where_prec,latitude,longitude,date_start,deaths_best
+489713,2023,non-state,Supporters of Awami League - Supporters of Jamaat-e-Islami,Supporters of Awami League,Supporters of Jamaat-e-Islami,Bangladesh,Asia,3,21.583889,92.015278,2023-08-15 00:00:00.000,1
+462627,2023,one-sided,ARSA - Civilians,ARSA,Civilians,Bangladesh,Asia,1,21.193635,92.16293,2023-01-08 00:00:00.000,1
+474945,2023,one-sided,ARSA - Civilians,ARSA,Civilians,Bangladesh,Asia,2,21.218459,92.160461,2023-04-15 00:00:00.000,1
+481346,2023,one-sided,ARSA - Civilians,ARSA,Civilians,Bangladesh,Asia,1,21.207767,92.16198,2023-06-17 00:00:00.000,1
+485049,2023,one-sided,ARSA - Civilians,ARSA,Civilians,Bangladesh,Asia,2,20.940935,92.259555,2023-07-15 00:00:00.000,1
+485050,2023,one-sided,ARSA - Civilians,ARSA,Civilians,Bangladesh,Asia,1,21.2127,92.163445,2023-07-26 00:00:00.000,1
+485051,2023,one-sided,ARSA - Civilians,ARSA,Civilians,Bangladesh,Asia,1,21.207767,92.16198,2023-07-30 00:00:00.000,1
+489692,2023,one-sided,ARSA - Civilians,ARSA,Civilians,Bangladesh,Asia,1,21.169359,92.153274,2023-08-10 00:00:00.000,1
+489707,2023,one-sided,ARSA - Civilians,ARSA,Civilians,Bangladesh,Asia,1,21.2127,92.163445,2023-08-22 00:00:00.000,1
+508291,2023,one-sided,ARSA - Civilians,ARSA,Civilians,Bangladesh,Asia,2,21.245,92.13752,2023-12-05 00:00:00.000,1
+499882,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,India,Asia,2,23.387373,93.304672,2023-11-13 00:00:00.000,2
+469966,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),ABSDF,Myanmar (Burma),Asia,5,22.279096,94.151406,2023-03-31 00:00:00.000,3
+478190,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),ABSDF,Myanmar (Burma),Asia,2,21.9418,94.75005,2023-06-14 00:00:00.000,0
+491175,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),ABSDF,Myanmar (Burma),Asia,1,22.63695,94.10897,2023-09-15 00:00:00.000,0
+499488,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),ABSDF,Myanmar (Burma),Asia,1,22.0229,94.09206,2023-11-03 00:00:00.000,0
+499550,2023,state-based,Myanmar (Burma): Kachin,Government of Myanmar (Burma),KIO,Myanmar (Burma),Asia,1,23.183333,94.05,2023-11-05 00:00:00.000,4
+460990,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,23.183333,94.05,2023-01-09 00:00:00.000,1
+461979,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,21.43037,93.87979,2023-01-09 00:00:00.000,1
+463790,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.795605,93.436685,2023-01-15 00:00:00.000,1
+467724,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.039865,94.637926,2023-02-14 00:00:00.000,2
+467146,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,22.109806,94.829397,2023-02-28 00:00:00.000,3
+468424,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,22.124259,94.883491,2023-03-03 00:00:00.000,2
+468519,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-03-06 00:00:00.000,1
+468413,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-03-08 00:00:00.000,2
+469125,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,21.8167,94.104,2023-03-15 00:00:00.000,1
+470984,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.791044,94.184035,2023-03-16 00:00:00.000,1
+469922,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,21.893753,94.13489,2023-03-18 00:00:00.000,2
+474201,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-04-03 00:00:00.000,2
+472090,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-04-18 00:00:00.000,1
+475037,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-05-02 00:00:00.000,1
+476243,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,22.370025,94.788904,2023-05-11 00:00:00.000,6
+476781,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-05-11 00:00:00.000,1
+476347,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,2,21.639707,95.046609,2023-05-26 00:00:00.000,5
+476821,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-05-28 00:00:00.000,2
+476840,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,22.279096,94.151406,2023-06-02 00:00:00.000,1
+478627,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,22.16528,94.12688,2023-06-10 00:00:00.000,2
+482528,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-07-07 00:00:00.000,3
+482941,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,22.11566,94.89746,2023-07-12 00:00:00.000,1
+486789,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,22.159893,94.097664,2023-08-09 00:00:00.000,1
+486788,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,22.137008,94.089555,2023-08-10 00:00:00.000,3
+485984,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-08-12 00:00:00.000,2
+486849,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-08-20 00:00:00.000,1
+487596,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-08-28 00:00:00.000,1
+491497,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-09-04 00:00:00.000,1
+491524,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,21.560251,94.881945,2023-09-11 00:00:00.000,0
+494281,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-10-01 00:00:00.000,1
+495554,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,23.183333,94.05,2023-10-06 00:00:00.000,1
+495536,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,2,23.183333,94.05,2023-10-07 00:00:00.000,2
+495575,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-10-12 00:00:00.000,1
+496658,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-10-14 00:00:00.000,6
+498944,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-10-16 00:00:00.000,1
+498949,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-10-18 00:00:00.000,1
+498951,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-10-18 00:00:00.000,1
+498960,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-10-22 00:00:00.000,2
+498988,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-10-27 00:00:00.000,0
+498991,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-10-29 00:00:00.000,2
+506414,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-11-03 00:00:00.000,1
+506421,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,20.935258,93.882647,2023-11-06 00:00:00.000,1
+499996,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,20.179267,93.068563,2023-11-15 00:00:00.000,10
+506787,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,20.4604,95.00952,2023-11-18 00:00:00.000,1
+507603,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-11-19 00:00:00.000,1
+507764,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,20.416925,93.467111,2023-12-06 00:00:00.000,1
+507766,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,5,20.922044,92.360793,2023-12-08 00:00:00.000,1
+507879,2023,one-sided,Government of Myanmar (Burma) - Civilians,Government of Myanmar (Burma),Civilians,Myanmar (Burma),Asia,1,20.84468,92.97527,2023-12-16 00:00:00.000,1
+461003,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,2,21.233161,93.902764,2023-01-10 00:00:00.000,5
+465265,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,21.795605,93.436685,2023-02-04 00:00:00.000,0
+465267,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,22.936139,93.86699,2023-02-04 00:00:00.000,0
+464873,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,21.795605,93.436685,2023-02-08 00:00:00.000,0
+464428,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,1,22.69915,93.428201,2023-02-08 00:00:00.000,1
+465086,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,1,22.69915,93.428201,2023-02-16 00:00:00.000,2
+466449,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,1,21.3601,93.89437,2023-02-25 00:00:00.000,5
+468539,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,21.374056,93.023824,2023-03-09 00:00:00.000,0
+469084,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,2,21.571476,93.300195,2023-03-22 00:00:00.000,0
+469097,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,21.446582,93.16365,2023-03-24 00:00:00.000,0
+469275,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,2,22.78374,93.568955,2023-03-27 00:00:00.000,0
+469971,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,2,22.78374,93.568955,2023-04-02 00:00:00.000,0
+471684,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,2,22.78374,93.568955,2023-04-05 00:00:00.000,0
+471875,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,1,22.640507,93.601841,2023-04-10 00:00:00.000,0
+474977,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,2,22.77028,93.56741,2023-04-13 00:00:00.000,1
+474317,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,2,22.640507,93.601841,2023-04-17 00:00:00.000,1
+474310,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,23.249007,93.4171,2023-04-21 00:00:00.000,1
+474025,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,22.404221,93.800123,2023-04-26 00:00:00.000,1
+474078,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,1,23.0082,93.33694,2023-04-27 00:00:00.000,2
+474116,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,22.404221,93.800123,2023-04-30 00:00:00.000,1
+474115,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,22.404221,93.800123,2023-05-01 00:00:00.000,0
+475782,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,22.404221,93.800123,2023-05-08 00:00:00.000,2
+481456,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,3,22.50764,93.544482,2023-05-24 00:00:00.000,1
+476738,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,2,21.376475,93.966364,2023-05-28 00:00:00.000,0
+476447,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,2,22.640507,93.601841,2023-05-29 00:00:00.000,11
+476448,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,2,22.640507,93.601841,2023-05-30 00:00:00.000,0
+476736,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,22.404221,93.800123,2023-06-01 00:00:00.000,1
+478036,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,2,22.640507,93.601841,2023-06-12 00:00:00.000,3
+482079,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,21.374056,93.023824,2023-07-03 00:00:00.000,0
+482112,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,2,22.69915,93.428201,2023-07-07 00:00:00.000,0
+482778,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,20.935258,93.882647,2023-07-24 00:00:00.000,0
+485991,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,5,22.936139,93.86699,2023-08-12 00:00:00.000,1
+485997,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,1,22.69915,93.428201,2023-08-14 00:00:00.000,5
+487588,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,1,22.69915,93.428201,2023-08-28 00:00:00.000,13
+487705,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,1,22.69915,93.428201,2023-08-30 00:00:00.000,1
+495846,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,1,22.69915,93.428201,2023-10-12 00:00:00.000,2
+499694,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),CNF,Myanmar (Burma),Asia,2,23.34841,93.38267,2023-11-12 00:00:00.000,6
+509999,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,4,19.0,94.25,2023-11-13 00:00:00.000,12
+499698,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.416925,93.467111,2023-11-13 00:00:00.000,6
+499806,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,20.586667,93.196389,2023-11-13 00:00:00.000,1
+499807,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,4,19.0,94.25,2023-11-13 00:00:00.000,1
+499975,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,21.19237,92.25669,2023-11-13 00:00:00.000,6
+506446,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.914149,92.947448,2023-11-13 00:00:00.000,2
+506447,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.416925,93.467111,2023-11-13 00:00:00.000,1
+506110,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,21.374056,93.023824,2023-11-14 00:00:00.000,2
+499984,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,20.362007,93.273489,2023-11-14 00:00:00.000,1
+499810,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.416925,93.467111,2023-11-14 00:00:00.000,4
+499811,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,19.88973,93.80151,2023-11-14 00:00:00.000,2
+500000,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.922044,92.360793,2023-11-16 00:00:00.000,2
+500143,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,20.179267,93.068563,2023-11-21 00:00:00.000,2
+501024,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,20.179267,93.068563,2023-11-22 00:00:00.000,0
+507620,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.416925,93.467111,2023-11-22 00:00:00.000,1
+507621,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,20.664303,93.237335,2023-11-22 00:00:00.000,1
+507722,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.484947,92.755714,2023-11-24 00:00:00.000,1
+507728,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,20.179267,93.068563,2023-11-25 00:00:00.000,1
+507729,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.922044,92.360793,2023-11-25 00:00:00.000,1
+501112,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.875369,92.529996,2023-11-27 00:00:00.000,4
+501113,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.6,93.2,2023-11-27 00:00:00.000,1
+507738,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,19.90897,93.99945,2023-11-28 00:00:00.000,1
+507760,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.21106,92.85285,2023-12-04 00:00:00.000,1
+506284,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,20.586667,93.196389,2023-12-06 00:00:00.000,0
+506293,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.416925,93.467111,2023-12-10 00:00:00.000,1
+506294,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,20.179267,93.068563,2023-12-10 00:00:00.000,0
+506408,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,19.09045,93.86239,2023-12-18 00:00:00.000,2
+506409,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,2,19.09045,93.86239,2023-12-18 00:00:00.000,0
+506802,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,2,20.179267,93.068563,2023-12-21 00:00:00.000,0
+506829,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,20.586667,93.196389,2023-12-24 00:00:00.000,3
+507527,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,20.586667,93.196389,2023-12-24 00:00:00.000,2
+506834,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,20.586667,93.196389,2023-12-25 00:00:00.000,1
+507526,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,1,20.586667,93.196389,2023-12-26 00:00:00.000,6
+507586,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.6,93.2,2023-12-28 00:00:00.000,4
+507587,2023,state-based,Myanmar (Burma): Arakan,Government of Myanmar (Burma),ULA,Myanmar (Burma),Asia,5,20.875369,92.529996,2023-12-28 00:00:00.000,6
+490785,2023,one-sided,ARSA - Civilians,ARSA,Civilians,Myanmar (Burma),Asia,5,20.875369,92.529996,2023-09-09 00:00:00.000,1
+460134,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.639707,95.046609,2023-01-01 00:00:00.000,0
+460127,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.145821,93.533285,2023-01-01 00:00:00.000,0
+460121,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.078067,94.901807,2023-01-01 00:00:00.000,0
+460741,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.039865,94.637926,2023-01-01 00:00:00.000,1
+460739,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.03354,94.41825,2023-01-02 00:00:00.000,8
+460666,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-01-02 00:00:00.000,0
+460975,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.608889,94.851243,2023-01-03 00:00:00.000,3
+460973,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.88752,94.67973,2023-01-04 00:00:00.000,0
+460704,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.795605,93.436685,2023-01-04 00:00:00.000,0
+460992,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-01-09 00:00:00.000,0
+460997,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.48618,94.76363,2023-01-09 00:00:00.000,0
+460989,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,23.183333,94.05,2023-01-09 00:00:00.000,1
+461641,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.88752,94.67973,2023-01-14 00:00:00.000,0
+509061,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,4,20.5,94.75,2023-01-14 00:00:00.000,1
+461656,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.795605,93.436685,2023-01-15 00:00:00.000,0
+463791,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.795605,93.436685,2023-01-15 00:00:00.000,4
+462024,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.626114,94.454312,2023-01-18 00:00:00.000,0
+462345,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.35862,94.91396,2023-01-20 00:00:00.000,0
+462346,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-01-20 00:00:00.000,0
+462356,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.570575,93.508608,2023-01-21 00:00:00.000,0
+462344,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-01-21 00:00:00.000,0
+463649,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.67937,94.91147,2023-01-22 00:00:00.000,0
+463650,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-01-23 00:00:00.000,0
+463644,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-01-23 00:00:00.000,0
+463715,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.02391,94.595924,2023-01-29 00:00:00.000,0
+464409,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-01-31 00:00:00.000,6
+464780,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-02-07 00:00:00.000,0
+464781,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-02-07 00:00:00.000,0
+464859,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.0113,94.13614,2023-02-09 00:00:00.000,1
+467714,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-02-12 00:00:00.000,0
+464864,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-02-12 00:00:00.000,7
+464860,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.24275,94.85373,2023-02-12 00:00:00.000,1
+465047,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.078067,94.901807,2023-02-13 00:00:00.000,1
+465062,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.222425,94.21458,2023-02-16 00:00:00.000,0
+465064,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.222425,94.21458,2023-02-18 00:00:00.000,1
+465142,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,23.183333,94.05,2023-02-20 00:00:00.000,0
+465193,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.46233,94.62462,2023-02-22 00:00:00.000,0
+466422,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.279096,94.151406,2023-02-24 00:00:00.000,0
+466420,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-02-25 00:00:00.000,0
+466421,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.608889,94.851243,2023-02-25 00:00:00.000,0
+467179,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-02-26 00:00:00.000,0
+467181,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.791044,94.184035,2023-02-26 00:00:00.000,0
+467762,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.079349,94.759975,2023-02-26 00:00:00.000,0
+467145,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.109806,94.829397,2023-02-28 00:00:00.000,2
+468435,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.109806,94.829397,2023-03-01 00:00:00.000,1
+468457,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-03-05 00:00:00.000,0
+468465,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,23.183333,94.05,2023-03-05 00:00:00.000,1
+468488,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.279096,94.151406,2023-03-06 00:00:00.000,0
+468482,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-03-07 00:00:00.000,0
+468483,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-03-07 00:00:00.000,1
+468538,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-03-09 00:00:00.000,1
+468406,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-03-09 00:00:00.000,2
+468564,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,23.085097,93.762353,2023-03-11 00:00:00.000,0
+468666,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.33489,95.08438,2023-03-13 00:00:00.000,0
+468671,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.791044,94.184035,2023-03-15 00:00:00.000,0
+468759,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.367771,94.092289,2023-03-16 00:00:00.000,0
+468673,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.791044,94.184035,2023-03-17 00:00:00.000,0
+468672,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.791044,94.184035,2023-03-18 00:00:00.000,1
+469075,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.331571,92.99409,2023-03-20 00:00:00.000,0
+469076,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.446582,93.16365,2023-03-20 00:00:00.000,0
+469074,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.24111,93.19283,2023-03-21 00:00:00.000,0
+469067,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.933759,94.874023,2023-03-21 00:00:00.000,5
+469938,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-03-29 00:00:00.000,0
+469937,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-03-30 00:00:00.000,0
+469968,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.411677,94.132761,2023-03-30 00:00:00.000,0
+469925,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.749975,93.425333,2023-03-30 00:00:00.000,10
+469972,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.58227,93.33022,2023-03-31 00:00:00.000,0
+471589,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-03-31 00:00:00.000,3
+469981,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.078067,94.901807,2023-04-01 00:00:00.000,0
+474206,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-04-03 00:00:00.000,1
+474928,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-04-03 00:00:00.000,1
+471590,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,23.183333,94.05,2023-04-04 00:00:00.000,0
+471688,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.370025,94.788904,2023-04-04 00:00:00.000,0
+471685,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-04-05 00:00:00.000,0
+471863,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,19.690687,94.786213,2023-04-07 00:00:00.000,0
+471867,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,22.91335,93.67779,2023-04-10 00:00:00.000,1
+472310,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.039865,94.637926,2023-04-10 00:00:00.000,0
+470685,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,23.016394,93.912795,2023-04-10 00:00:00.000,10
+474972,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-04-12 00:00:00.000,1
+472308,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.039865,94.637926,2023-04-16 00:00:00.000,0
+472061,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.50245,94.01144,2023-04-16 00:00:00.000,3
+472311,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.370025,94.788904,2023-04-17 00:00:00.000,2
+472436,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.843386,94.935203,2023-04-18 00:00:00.000,0
+472108,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.791044,94.184035,2023-04-20 00:00:00.000,3
+474983,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-04-21 00:00:00.000,2
+474015,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.411677,94.132761,2023-04-23 00:00:00.000,0
+474017,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-04-24 00:00:00.000,1
+474019,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-04-24 00:00:00.000,0
+474028,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-04-25 00:00:00.000,1
+474026,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.190374,94.057217,2023-04-26 00:00:00.000,0
+474031,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.370025,94.788904,2023-04-27 00:00:00.000,0
+474033,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.370025,94.788904,2023-04-27 00:00:00.000,0
+474097,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,20.949561,93.840256,2023-04-29 00:00:00.000,0
+475047,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.846653,94.340829,2023-05-04 00:00:00.000,7
+475547,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.791044,94.184035,2023-05-07 00:00:00.000,0
+476234,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,20.680078,94.527363,2023-05-10 00:00:00.000,3
+475784,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-05-11 00:00:00.000,1
+476280,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-05-17 00:00:00.000,0
+476332,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,19.690687,94.786213,2023-05-23 00:00:00.000,2
+476326,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-05-25 00:00:00.000,0
+476355,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-05-27 00:00:00.000,0
+476455,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,19.690687,94.786213,2023-05-29 00:00:00.000,10
+476700,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.363071,94.098034,2023-05-31 00:00:00.000,1
+476838,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.279096,94.151406,2023-06-02 00:00:00.000,2
+477749,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-06-02 00:00:00.000,0
+477760,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.411677,94.132761,2023-06-03 00:00:00.000,0
+477956,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.42236,94.637893,2023-06-05 00:00:00.000,0
+478262,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-06-05 00:00:00.000,1
+477989,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-06-07 00:00:00.000,0
+477967,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-06-07 00:00:00.000,0
+477988,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-06-08 00:00:00.000,0
+478620,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-06-09 00:00:00.000,1
+478146,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-06-11 00:00:00.000,1
+478170,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-06-11 00:00:00.000,0
+478205,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,20.684097,94.438264,2023-06-12 00:00:00.000,0
+480747,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.745268,94.124603,2023-06-15 00:00:00.000,2
+478656,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,23.156353,94.045042,2023-06-16 00:00:00.000,1
+478224,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-06-17 00:00:00.000,0
+478674,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,23.11548,94.039545,2023-06-18 00:00:00.000,2
+478676,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,23.156353,94.045042,2023-06-20 00:00:00.000,1
+480033,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.02391,94.595924,2023-06-20 00:00:00.000,0
+480032,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.039865,94.637926,2023-06-21 00:00:00.000,0
+478677,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-06-21 00:00:00.000,1
+478686,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,23.11548,94.039545,2023-06-23 00:00:00.000,1
+480063,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.439827,93.762208,2023-06-26 00:00:00.000,0
+480880,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,3,22.211689,94.739168,2023-06-27 00:00:00.000,6
+480064,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-06-27 00:00:00.000,11
+480096,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.904364,94.633972,2023-06-27 00:00:00.000,1
+480276,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-06-28 00:00:00.000,0
+482074,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.02391,94.595924,2023-07-02 00:00:00.000,0
+482113,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.954845,93.116847,2023-07-08 00:00:00.000,1
+481717,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.439827,93.762208,2023-07-08 00:00:00.000,3
+482117,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,23.183333,94.05,2023-07-11 00:00:00.000,1
+482104,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-07-11 00:00:00.000,1
+482053,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,23.282934,93.744931,2023-07-11 00:00:00.000,4
+482116,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,23.183333,94.05,2023-07-13 00:00:00.000,2
+482129,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-07-13 00:00:00.000,0
+482267,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.222425,94.21458,2023-07-14 00:00:00.000,5
+482265,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.222425,94.21458,2023-07-14 00:00:00.000,2
+482781,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.039865,94.637926,2023-07-14 00:00:00.000,0
+482326,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,20.935258,93.882647,2023-07-18 00:00:00.000,0
+482282,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.039865,94.637926,2023-07-18 00:00:00.000,0
+482322,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-07-19 00:00:00.000,3
+482325,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,20.935258,93.882647,2023-07-19 00:00:00.000,0
+482703,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,20.935258,93.882647,2023-07-21 00:00:00.000,0
+482706,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-07-21 00:00:00.000,0
+482329,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-07-21 00:00:00.000,14
+482702,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,20.935258,93.882647,2023-07-23 00:00:00.000,1
+482737,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-07-24 00:00:00.000,0
+482738,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-07-24 00:00:00.000,0
+482777,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,20.97855,93.96848,2023-07-24 00:00:00.000,1
+483119,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-07-25 00:00:00.000,0
+483120,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.222425,94.21458,2023-07-26 00:00:00.000,0
+483767,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.376475,93.966364,2023-07-30 00:00:00.000,0
+485370,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-07-30 00:00:00.000,0
+484418,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-08-01 00:00:00.000,0
+485368,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.67937,94.91147,2023-08-01 00:00:00.000,1
+484442,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-08-02 00:00:00.000,1
+485367,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-08-03 00:00:00.000,0
+485361,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.370025,94.788904,2023-08-03 00:00:00.000,0
+485623,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-08-08 00:00:00.000,0
+485626,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.370025,94.788904,2023-08-09 00:00:00.000,0
+485622,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.383308,94.812693,2023-08-09 00:00:00.000,0
+485981,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.597965,94.130599,2023-08-11 00:00:00.000,2
+485992,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.608889,94.851243,2023-08-12 00:00:00.000,0
+486531,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-08-15 00:00:00.000,0
+486533,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-08-15 00:00:00.000,0
+486635,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-08-15 00:00:00.000,1
+486633,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,23.156353,94.045042,2023-08-15 00:00:00.000,1
+486636,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,23.156353,94.045042,2023-08-16 00:00:00.000,1
+486629,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.6703,94.97234,2023-08-18 00:00:00.000,0
+486831,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,19.931803,94.449604,2023-08-20 00:00:00.000,0
+486827,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.370025,94.788904,2023-08-20 00:00:00.000,1
+486820,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,20.4604,95.00952,2023-08-21 00:00:00.000,0
+486817,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-08-21 00:00:00.000,0
+486816,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.891125,94.362221,2023-08-21 00:00:00.000,0
+486819,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-08-22 00:00:00.000,0
+486997,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.258197,94.89975,2023-08-22 00:00:00.000,0
+486998,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.346437,94.934356,2023-08-22 00:00:00.000,0
+487702,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.19911,94.13755,2023-08-27 00:00:00.000,1
+487613,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.558666,94.764131,2023-08-27 00:00:00.000,1
+487617,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.279096,94.151406,2023-08-27 00:00:00.000,0
+487614,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.33489,95.08438,2023-08-28 00:00:00.000,0
+487615,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.366492,95.112477,2023-08-29 00:00:00.000,0
+487616,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.608889,94.851243,2023-08-29 00:00:00.000,0
+487594,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-08-29 00:00:00.000,0
+495463,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-08-30 00:00:00.000,0
+487921,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-09-03 00:00:00.000,0
+491861,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.383308,94.812693,2023-09-03 00:00:00.000,1
+490707,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.446582,93.16365,2023-09-04 00:00:00.000,0
+487915,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-09-04 00:00:00.000,0
+487910,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.167395,94.858318,2023-09-04 00:00:00.000,0
+487914,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-09-05 00:00:00.000,0
+490449,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-09-06 00:00:00.000,0
+490490,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-09-07 00:00:00.000,0
+490791,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-09-09 00:00:00.000,1
+490752,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-09-11 00:00:00.000,0
+490754,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-09-12 00:00:00.000,0
+494221,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.597965,94.130599,2023-09-16 00:00:00.000,2
+491172,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,19.690687,94.786213,2023-09-16 00:00:00.000,0
+491480,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.33489,95.08438,2023-09-18 00:00:00.000,0
+491868,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,22.070379,94.349001,2023-09-18 00:00:00.000,0
+491879,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-09-19 00:00:00.000,0
+491867,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.383308,94.812693,2023-09-19 00:00:00.000,0
+491864,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-09-21 00:00:00.000,0
+494247,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.936139,93.86699,2023-09-21 00:00:00.000,1
+494249,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.453187,94.858546,2023-09-22 00:00:00.000,1
+491932,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,20.15,94.91667,2023-09-23 00:00:00.000,0
+493659,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.279096,94.151406,2023-09-23 00:00:00.000,0
+494265,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.376475,93.966364,2023-09-26 00:00:00.000,1
+493826,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.190374,94.057217,2023-09-27 00:00:00.000,0
+493586,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-09-27 00:00:00.000,3
+493650,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-09-27 00:00:00.000,5
+494197,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.968699,94.665232,2023-09-29 00:00:00.000,1
+494187,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-09-29 00:00:00.000,1
+493862,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-10-01 00:00:00.000,0
+494949,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-10-02 00:00:00.000,0
+495464,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-10-02 00:00:00.000,0
+495466,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-10-03 00:00:00.000,0
+495467,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-10-03 00:00:00.000,1
+494940,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-10-03 00:00:00.000,0
+494981,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.361959,94.54755,2023-10-03 00:00:00.000,0
+495465,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-10-04 00:00:00.000,0
+495517,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.957777,93.434,2023-10-06 00:00:00.000,0
+495679,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-10-07 00:00:00.000,1
+495822,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-10-10 00:00:00.000,4
+495681,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.45354,94.47133,2023-10-10 00:00:00.000,0
+496660,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-10-15 00:00:00.000,0
+496661,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-10-15 00:00:00.000,1
+496706,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.039865,94.637926,2023-10-17 00:00:00.000,0
+498953,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.936139,93.86699,2023-10-18 00:00:00.000,1
+496734,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,20.680078,94.527363,2023-10-21 00:00:00.000,0
+497639,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-10-23 00:00:00.000,1
+497626,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-10-29 00:00:00.000,3
+497634,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-10-29 00:00:00.000,2
+506411,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-11-03 00:00:00.000,1
+506413,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.279096,94.151406,2023-11-03 00:00:00.000,2
+506417,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-11-06 00:00:00.000,1
+499690,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.957777,93.434,2023-11-06 00:00:00.000,0
+498833,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.152716,94.152339,2023-11-07 00:00:00.000,1
+498834,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.152716,94.152339,2023-11-07 00:00:00.000,1
+512798,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.65787,94.10595,2023-11-07 00:00:00.000,2
+499841,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.626114,94.454312,2023-11-10 00:00:00.000,0
+499863,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.843386,94.935203,2023-11-12 00:00:00.000,0
+499839,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,2,21.626114,94.454312,2023-11-15 00:00:00.000,21
+499820,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.299148,93.440107,2023-11-15 00:00:00.000,11
+507609,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.954845,93.116847,2023-11-20 00:00:00.000,2
+507618,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-11-21 00:00:00.000,1
+507616,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-11-21 00:00:00.000,4
+500138,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,23.318701,93.761752,2023-11-21 00:00:00.000,1
+501022,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.370025,94.788904,2023-11-22 00:00:00.000,2
+507631,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.674599,94.882795,2023-11-22 00:00:00.000,3
+507634,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.810777,94.074724,2023-11-23 00:00:00.000,1
+507727,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,23.173189,94.145293,2023-11-25 00:00:00.000,1
+507730,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.222425,94.21458,2023-11-26 00:00:00.000,2
+507538,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.84649,93.61222,2023-11-26 00:00:00.000,4
+505976,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.640507,93.601841,2023-11-26 00:00:00.000,0
+507732,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.936139,93.86699,2023-11-27 00:00:00.000,1
+507735,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.810777,94.074724,2023-11-27 00:00:00.000,1
+507736,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,22.810777,94.074724,2023-11-28 00:00:00.000,1
+507761,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.149919,94.883721,2023-12-05 00:00:00.000,3
+506112,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.039865,94.637926,2023-12-05 00:00:00.000,0
+506306,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.370025,94.788904,2023-12-11 00:00:00.000,0
+506308,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.27608,94.88544,2023-12-11 00:00:00.000,0
+506309,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.608889,94.851243,2023-12-11 00:00:00.000,0
+506310,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.608889,94.851243,2023-12-12 00:00:00.000,0
+506313,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.9418,94.75005,2023-12-12 00:00:00.000,5
+507871,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.222425,94.21458,2023-12-12 00:00:00.000,1
+507543,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.039865,94.637926,2023-12-15 00:00:00.000,2
+507877,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.279096,94.151406,2023-12-16 00:00:00.000,2
+508170,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,21.795605,93.436685,2023-12-18 00:00:00.000,4
+507537,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,5,22.279096,94.151406,2023-12-21 00:00:00.000,0
+507529,2023,state-based,Myanmar (Burma): Government,Government of Myanmar (Burma),NUG,Myanmar (Burma),Asia,1,21.376475,93.966364,2023-12-23 00:00:00.000,0
