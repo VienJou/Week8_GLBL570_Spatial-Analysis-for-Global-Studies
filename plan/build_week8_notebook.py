@@ -952,10 +952,10 @@ classes = sorted(vc[vc >= 2000].index)
 usable &= np.isin(yv, classes)
 idx = RNG.choice(np.flatnonzero(usable), size=min(120_000, usable.sum()), replace=False)
 Xtr, Xte, ytr, yte = train_test_split(X[idx], yv[idx], test_size=0.3, random_state=570, stratify=yv[idx])
-rf = RandomForestClassifier(n_estimators=120, min_samples_leaf=5, n_jobs=-1, random_state=570).fit(Xtr, ytr)
+rf = RandomForestClassifier(n_estimators=120, min_samples_leaf=5, n_jobs=4, random_state=570).fit(Xtr, ytr)   # 4 threads: n_jobs=-1 on a many-core node uses ~20 GB
 pred = rf.predict(Xte)
 acc = accuracy_score(yte, pred)
-full = rf.predict(np.nan_to_num(X)).reshape(labels.shape)
+full = np.concatenate([rf.predict(np.nan_to_num(X[i:i + 250_000])) for i in range(0, len(X), 250_000)]).reshape(labels.shape)   # in blocks: bounded memory
 print(f"train {len(Xtr):,} / test {len(Xte):,} pixels · {len(classes)} classes · overall accuracy {acc:.3f}")
 """)
 code(r"""

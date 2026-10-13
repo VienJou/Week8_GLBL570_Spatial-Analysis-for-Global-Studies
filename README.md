@@ -24,7 +24,7 @@ Companion notebook, lab materials and data for Week 8 (Module 4, GIS weeks 7–8
 | `requirements.txt` | Python libraries (includes scikit-learn) |
 
 ## Run the notebook
-* CPU only, no internet needed. A full run takes about 5–7 minutes.
+* CPU only, no internet needed. A full run takes about 5–7 minutes; peak memory is about 4.6 GB (use a kernel with at least 6 GB).
 * Tested on Python 3.9 (NumPy 1.26) and Python 3.12 (NumPy 2.5, pandas 3.0). On I-GUIDE use the `geoai-edu` kernel.
 * `pip install -r requirements.txt`, open the notebook **from the repository root** (it reads `notebook_data_week7/` and `notebook_data_week8/`), then *Run All*.
 * The last cell checks that all 16 figures were written and prints the headline numbers for the lecture.
