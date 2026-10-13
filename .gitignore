@@ -6,3 +6,5 @@ __pycache__/
 outputs/week8_outputs.gpkg
 # Lab package archive (built by scripts/make_lab_package_week8.py; same content as GLBL570_Week8_Lab/)
 *.zip
+# Chinese review copy of the notebook is kept locally, not distributed
+GLBL570_Week8_Spatial_Analysis_Lab_zh.ipynb

@@ -6,7 +6,6 @@ Companion notebook, lab materials and data for Week 8 (Module 4, GIS weeks 7–8
   overlay · buffer and proximity · clusters and hotspots · remote sensing and machine learning · the politics of categories ·
   discussion · lab) and writes the 16 figures the lecture deck uses into `outputs/`. Every figure is followed by a
   "Reading the figure" cell (data · what we did · what it shows), and every analytical section ends with a `CANNOT ESTABLISH:` line.
-- **`GLBL570_Week8_Spatial_Analysis_Lab_zh.ipynb`** is the same notebook with the explanations in Chinese (code and outputs identical).
 - **`GLBL570_Week8_Lab/`** is the self-contained hands-on lab (GIS Workshop II) for students: one folder per task, the lab guide and a README.
 
 ## Contents
@@ -14,14 +13,13 @@ Companion notebook, lab materials and data for Week 8 (Module 4, GIS weeks 7–8
 | Path | What it is |
 |---|---|
 | `GLBL570_Week8_Spatial_Analysis_Lab.ipynb` | The notebook, saved with outputs (English) |
-| `GLBL570_Week8_Spatial_Analysis_Lab_zh.ipynb` | Same notebook, explanations in Chinese |
 | `GLBL570_Week8_Lab/` | **Student lab package** — `README.md` (schedule and files), `GLBL570_Week8_Lab_Guide.pdf`, and data folders `Task1_Overlay/`, `Task2_Buffer/`, `Task3_Image_Classification/`, `Task4_Memo/`, `Extensions/`. Nothing else needs to be downloaded |
 | `GLBL570_Week8_Lab_Guide.pdf` | The 7-page lab guide: the files each task uses, and exact QGIS / SCP steps with self-check numbers for Tasks 1–4 |
 | `notebook_data_week8/` | Week 8 data: PAD-US 4.1 protected areas, NLCD 2021 and SRTM for Mount Hood – Columbia Gorge, Cox's Bazar camp outlines, UCDP events near the camps, and for the classification task a spring Sentinel-2 scene, 30 m NLCD and ready-made training / validation areas. See `notebook_data_week8/README.md`. Used by the notebook; the lab package has its own copies, so students do not need this folder |
 | `notebook_data_week7/` | Week 7 layers the notebook reuses (U.S. counties + ACS, states, earthquakes, world countries, UCDP 2023, Illinois NLCD, Champaign Sentinel-2) — the Week 7 data pack, renamed. See `notebook_data_week7/README.md`. Not needed for the lab |
 | `outputs/` | The 16 lecture figures (PNG, 220 dpi; PDF for line-work figures) and the memo the notebook fills in |
 | `scripts/` | Rebuild the data: `build_lab_data_week8.py` (vectors, tables), `fetch_rasters_gee_week8.py` (rasters), `build_scp_training_week8.py` (spring scene, 30 m NLCD, training and validation areas), `make_lab_package_week8.py` (assembles `GLBL570_Week8_Lab/`) |
-| `plan/` | Regenerate the notebooks: `build_week8_notebook.py` (builds the English notebook; reading texts in `week8_reads.py`) and `make_week8_zh.py` (Chinese copy); source files for the lab package README and memo template |
+| `plan/` | Regenerate the notebooks: `build_week8_notebook.py` (builds the English notebook; reading texts in `week8_reads.py`) and `make_week8_zh.py` (run after executing the notebook: removes the build metadata; also writes a Chinese review copy, which is not distributed here); source files for the lab package README and memo template |
 | `requirements.txt` | Python libraries (includes scikit-learn) |
 
 ## Run the notebook
