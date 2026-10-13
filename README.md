@@ -18,7 +18,7 @@ Companion notebook, lab materials and data for Week 8 (Module 4, GIS weeks 7–8
 | `GLBL570_Week8_Lab_Guide.pdf` | The 7-page lab guide: the files each task uses, and exact QGIS / SCP steps with self-check numbers for Tasks 1–4 |
 | `notebook_data_week8/` | Week 8 data: PAD-US 4.1 protected areas, NLCD 2021 and SRTM for Mount Hood – Columbia Gorge, Cox's Bazar camp outlines, UCDP events near the camps, and for the classification task a spring Sentinel-2 scene, 30 m NLCD and ready-made training / validation areas. See `notebook_data_week8/README.md`. Used by the notebook; the lab package has its own copies, so students do not need this folder |
 | `notebook_data_week7/` | Week 7 layers the notebook reuses (U.S. counties + ACS, states, earthquakes, world countries, UCDP 2023, Illinois NLCD, Champaign Sentinel-2) — the Week 7 data pack, renamed. See `notebook_data_week7/README.md`. Not needed for the lab |
-| `outputs/` | The 16 lecture figures (PNG, 220 dpi; PDF for line-work figures) and the memo the notebook fills in |
+| `outputs/` | The 16 figures the notebook writes — 11 used in the lecture deck, 5 supplementary (PNG, 220 dpi; PDF for line-work figures) — and the memo the notebook fills in |
 | `scripts/` | Rebuild the data: `build_lab_data_week8.py` (vectors, tables), `fetch_rasters_gee_week8.py` (rasters), `build_scp_training_week8.py` (spring scene, 30 m NLCD, training and validation areas), `make_lab_package_week8.py` (assembles `GLBL570_Week8_Lab/`) |
 | `plan/` | Regenerate the notebooks: `build_week8_notebook.py` (builds the English notebook; reading texts in `week8_reads.py`) and `make_week8_zh.py` (run after executing the notebook: removes the build metadata; also writes a Chinese review copy, which is not distributed here); source files for the lab package README and memo template |
 | `requirements.txt` | Python libraries (includes scikit-learn) |
@@ -39,7 +39,7 @@ Companion notebook, lab materials and data for Week 8 (Module 4, GIS weeks 7–8
 | 45–55′ | Task 4 · Export the result map(s) and write a 200–300-word memo with one policy implication | `Task4_Memo/` |
 | after class | Optional extensions: A · Moran's I / LISA / Gi* (GeoDa) · C · OSINT aggregation of conflict events | `Extensions/` |
 
-Give students `GLBL570_Week8_Lab/` (or the ZIP made by `python scripts/make_lab_package_week8.py`). They need QGIS 3.28+,
+Give students `GLBL570_Week8_Lab.zip` (in this repository; same content as `GLBL570_Week8_Lab/`). They need QGIS 3.28+,
 the Semi-Automatic Classification Plugin with scikit-learn (Task 3), and GeoDa only for Extension A.
 
 ## Figures (lecture deck slide → file in `outputs/`)
