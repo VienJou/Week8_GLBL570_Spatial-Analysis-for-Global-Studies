@@ -33,27 +33,55 @@ def code(s):
 
 # =========================================================================================== §0
 md(r"""
-# GLBL 570 · Week 8 — Spatial Analysis for Global Studies: Companion Notebook
+# GLBL 570 · Methodologies of Global Studies · Week 8 — Spatial Analysis for Global Studies: Companion Notebook
 
-Week 7 asked **"what is where?"** This week the map becomes an **instrument**: combine layers, measure distance, test whether a pattern is real, and let a model infer the ground from space. Each section follows a chapter of `GLBL570_Week8_Spatial_Analysis_v3.pptx` and writes the figures the deck's `[FIGURE SLOT]` notes name.
+Week 7 asked **"what is where?"** This week the map becomes an **instrument**: combine layers, measure distance, test whether a pattern is real, and let a model infer the ground from space. The sections follow the chapters of the Week 8 lecture deck (`GLBL570_Week8_Spatial_Analysis_1013.pptx`, 56 slides; slide numbers below are the deck's slide order) and write the figures the deck uses.
 
-| § | Chapter | LO | Deck slides | Figures written to `outputs/` |
+| § | Chapter | LO | Deck slides | Figures written to `outputs/` (slide) |
 |---|---|---|---|---|
 | 0 | Setup and the data pack | — | — | — |
-| 1 | From mapping to analysis | — | 7–10 | `spatial_shuffle_test.png` (10) |
-| 2 | Overlay analysis | **1** | 11–14 | `overlay_operations.png` (13) · `overlay_policy_forest_protected.png` (14) |
-| 3 | Buffer, distance and proximity | **1** | 15–21 | `distance_to_water_development.png` (18) · `proximity_toolbox.png` (19) · `buffer_sensitivity.png` (20) · `data_preprocessing_dissolve_integrate.png` (21) |
-| 4 | Patterns, clusters and hotspots | **2** | 22–29 | `clusters_moran_lisa.png` (25) · `hotspots_getis_ord.png` (26) · `point_pattern_nn.png` (27) · `spatial_correlation_two_variables.png` (29) |
-| 5 | Remote sensing and machine learning | **3** | 30–37 | `rs_ndvi_classification.png` (32) · `ml_confusion_matrix.png` (36) |
-| 6 | Policy and the politics of categories | **4** | 38–43 | `categories_forest_definitions.png` (40) · `maup_two_aggregations.png` (41) · `ethics_point_vs_aggregated.png` (43) |
-| 7 | Discussion and AI engagement | — | 44–46 | — |
-| 8 | Lab and deliverable | **5** | 47–49 | memo template, QGIS layers, figure checklist |
+| 1 | What is spatial analysis? | — | 6–9 | `spatial_shuffle_test.png` (9) |
+| 2 | Overlay analysis | **1** | 10–13 | `overlay_operations.png` (12) · `overlay_policy_forest_protected.png` (13) |
+| 3 | Proximity: distance and buffer | **1** | 14–18 | `buffer_sensitivity.png` (17) · `distance_to_water_development.png` (18) · *supplementary:* `proximity_toolbox.png`, `data_preprocessing_dissolve_integrate.png` |
+| 4 | Patterns, clusters and hotspots | **2** | 19–24 | `clusters_moran_lisa.png` (22, 24) · `hotspots_getis_ord.png` (23–24) · `point_pattern_nn.png` (appendix 47) · *supplementary:* `spatial_correlation_two_variables.png` |
+| 5 | Remote sensing and machine learning | **3** | 25–30 | `rs_ndvi_classification.png` (28; appendix 48) · *supplementary:* `ml_confusion_matrix.png` |
+| 6 | Policy and the politics of categories | **4** | 31–34 | `maup_two_aggregations.png` (appendix 50) · *supplementary:* `categories_forest_definitions.png` |
+| 7 | Ethics, representation and data use | **4** | 35–43 | `ethics_point_vs_aggregated.png` (appendix 56) |
+| 8 | Lab activities | **5** | 44–45 | memo template, QGIS layers, figure checklist |
 
-**One continuous case.** §§2–4 work in the **Pacific Northwest**: the overlay, distance and preprocessing steps in a six-county focus area around **Mount Hood and the Columbia River Gorge** (forest + protected land + a large river + Portland), and the cluster statistics on all **Oregon, Washington and Idaho** counties, which contain the focus area. The humanitarian buffer/proximity track (§3.2) uses the **Rohingya refugee camps of Cox's Bazar** and UCDP conflict events.
+*Supplementary* figures are not in the slides; they are kept because the lab uses the same steps (dissolve before measuring area, per-class accuracy) or because they extend a slide's argument with our own data.
+
+**Two places, one national map.** Overlay and distance work in a six-county focus area around **Mount Hood and the Columbia River Gorge** (forest, protected land, a large river, Portland). The buffer case uses the **Rohingya refugee camps of Cox's Bazar** and UCDP conflict events. The cluster statistics use all **3,107 counties of the contiguous United States**.
 
 **Every analytical section ends with a line beginning `CANNOT ESTABLISH:`** — what the result does not show. Spatial analysis does not remove analytical choices; it makes them consequential.
 
 Run from the repository root (it needs `notebook_data_week7/` and `notebook_data_week8/`). CPU only, no internet. Needs `scikit-learn` (§5) in addition to the Week 7 libraries.
+""", r"""
+# GLBL 570 · Methodologies of Global Studies · 第 8 周 —— 面向全球研究的空间分析：配套 Notebook
+
+> **中文审阅版**：只翻译了说明文字；代码、运行输出和图片与英文版完全相同（图中文字仍为英文）。
+
+第 7 周回答的是 **"什么在哪里？"** 本周地图变成一种**分析工具**：叠加图层、测量距离、检验一个格局是否真实存在，并让模型从卫星影像推断地表。各节按第 8 周课件（`GLBL570_Week8_Spatial_Analysis_1013.pptx`，共 56 页；下表页码为课件中的实际页序）的章节组织，并生成课件使用的图片。
+
+| § | 章节 | 学习目标 | 课件页 | 写入 `outputs/` 的图（页码） |
+|---|---|---|---|---|
+| 0 | 环境设置与数据包 | — | — | — |
+| 1 | 什么是空间分析？ | — | 6–9 | `spatial_shuffle_test.png`（9） |
+| 2 | 叠加分析 | **1** | 10–13 | `overlay_operations.png`（12）· `overlay_policy_forest_protected.png`（13） |
+| 3 | 邻近：距离与缓冲区 | **1** | 14–18 | `buffer_sensitivity.png`（17）· `distance_to_water_development.png`（18）· *补充：* `proximity_toolbox.png`、`data_preprocessing_dissolve_integrate.png` |
+| 4 | 格局、聚类与热点 | **2** | 19–24 | `clusters_moran_lisa.png`（22、24）· `hotspots_getis_ord.png`（23–24）· `point_pattern_nn.png`（附录 47）· *补充：* `spatial_correlation_two_variables.png` |
+| 5 | 遥感与机器学习 | **3** | 25–30 | `rs_ndvi_classification.png`（28；附录 48）· *补充：* `ml_confusion_matrix.png` |
+| 6 | 政策与"类别的政治" | **4** | 31–34 | `maup_two_aggregations.png`（附录 50）· *补充：* `categories_forest_definitions.png` |
+| 7 | 伦理、表征与数据使用 | **4** | 35–43 | `ethics_point_vs_aggregated.png`（附录 56） |
+| 8 | 实验活动 | **5** | 44–45 | 备忘录模板、QGIS 图层、图片清单 |
+
+*补充*图不在课件中；保留它们是因为上机实验用到同样的步骤（先融合再算面积、按类别报告精度），或者它们用我们自己的数据延伸了某一页的论点。
+
+**两个地点，一张全国地图。** 叠加与距离分析在**胡德山与哥伦比亚河峡谷**周边的 6 个县中进行（森林、保护地、大河、波特兰市）；缓冲区案例使用**考克斯巴扎尔的罗兴亚难民营**和 UCDP 冲突事件；聚类统计使用**美国本土全部 3,107 个县**。
+
+**每个分析小节都以一行 `CANNOT ESTABLISH:` 结尾**，写明这个结果*不能*说明什么。空间分析不会消除分析中的选择，只会让这些选择产生实际后果。
+
+请在仓库根目录运行（需要 `notebook_data_week7/` 和 `notebook_data_week8/`）。只需 CPU，无需联网。除第 7 周的库外，§5 还需要 `scikit-learn`。
 """)
 code(r"""
 import os, warnings
@@ -159,14 +187,14 @@ display(pd.DataFrame(inv))
 # =========================================================================================== §1
 md(r"""
 ---
-## 1 · From Mapping to Analysis  (slides 7–10)
-Week 7's county map was a **description**: one layer answering *what is where*. Analysis asks what locations mean **together** (slide 8). Slide 10's test for whether an analysis is *spatial*: **when the location changes, does the information content change?** The cell below runs that test directly: it shuffles which county holds which poverty rate and compares a non-spatial summary (a histogram) with a spatial one (each county against its neighbours) before and after.
+## 1 · What Is Spatial Analysis?  (slides 6–9)
+Week 7's county map was a **description**: one layer answering *what is where*. Analysis asks what locations mean **together** (slide 7). Slide 9's test for whether an analysis is *spatial*: **when the location changes, does the information content change?** The cell below runs that test directly: it shuffles which county holds which poverty rate and compares a non-spatial summary (a histogram) with a spatial one (each county against its neighbours) before and after.
 
 The data are the **3,100-odd counties of the contiguous United States** (the lower 48 states and DC). The neighbour relation is built once here and reused in §4.
 """, r"""
 ---
-## 1 · 从制图到分析（课件第 7–10 页）
-第 7 周的县级地图是一种**描述**：一个图层回答*什么在哪里*。分析要问的是这些位置**合在一起**意味着什么（第 8 页）。第 10 页给出判断一个分析是否"空间"的标准：**位置改变时，信息内容是否随之改变？**
+## 1 · 什么是空间分析？（课件第 6–9 页）
+第 7 周的县级地图是一种**描述**：一个图层回答*什么在哪里*。分析要问的是这些位置**合在一起**意味着什么（第 7 页）。第 9 页给出判断一个分析是否"空间"的标准：**位置改变时，信息内容是否随之改变？**
 
 下面的单元格直接做这个检验：随机打乱"哪个县对应哪个贫困率"，比较打乱前后非空间统计（直方图）和空间统计（每个县与其邻居的关系）各自有没有变化。
 
@@ -240,14 +268,14 @@ source(fig, "U.S. Census Bureau ACS 2018–2022 5-year (% below poverty); contig
 print(f"real r = {r_obs:.3f}; one shuffle r = {r_one:.3f}; 999 shuffles: mean {r_null.mean():.3f}, "
       f"middle 95% {np.percentile(r_null, 2.5):.2f} to {np.percentile(r_null, 97.5):.2f}, max {r_null.max():.2f}; "
       f"{n_ge} shuffles reach r >= {r_obs:.2f}")
-save(fig, "spatial_shuffle_test.png", 10)
+save(fig, "spatial_shuffle_test.png", "9")
 """)
 
 # =========================================================================================== §2
 md(r"""
 ---
-## 2 · Overlay Analysis  (slides 11–14) · **LO 1**
-Overlay is a **join whose key is geography** (slide 12). The operations differ in **which pieces survive** and **whose attributes they carry**:
+## 2 · Overlay Analysis  (slides 10–13) · **LO 1**
+Overlay is a **join whose key is geography** (slide 11). The six operations of slide 12 differ in **which pieces survive** and **whose attributes they carry**:
 
 | Operation | Geometry kept | Attributes |
 |---|---|---|
@@ -256,10 +284,26 @@ Overlay is a **join whose key is geography** (slide 12). The operations differ i
 | **Erase** | A − B | A only |
 | **Union** | everything, cut at every edge | both (nulls where absent) |
 | **Identity** | all of A, cut by B | A + B where they coincide |
-| **Symmetric difference** | everything except A ∩ B | both |
+| **Update** | A − B, plus all of B | A's where only A remains, B's where B replaces it |
 
 ### 2.1 The focus area and the two layers
 Six counties around Mount Hood and the Columbia River Gorge. **Forest** comes from NLCD 2021 (30 m, raw class codes); **protected areas** from **PAD-US 4.1** (USGS Gap Analysis Project). PAD-US records protection by **GAP status**: 1–2 = managed for biodiversity, 3 = multiple use (e.g. most national-forest land), 4 = no known mandate.
+""", r"""
+---
+## 2 · 叠加分析（第 10–13 页）· **学习目标 1**
+叠加是一种**以地理位置为键的连接**（第 11 页）。第 12 页的六种操作区别在于**保留哪些部分**以及**带上谁的属性**：
+
+| 操作 | 保留的几何 | 属性 |
+|---|---|---|
+| **Clip（裁剪）** | A ∩ B | 只有 A 的 |
+| **Intersect（相交）** | A ∩ B | A 和 B 的 |
+| **Erase（擦除）** | A − B | 只有 A 的 |
+| **Union（联合）** | 全部，在每条边界处切开 | 两者的（没有的地方为空值） |
+| **Identity（标识）** | A 的全部，被 B 切开 | A 的 + 重合处 B 的 |
+| **Update（更新）** | A − B，加上 B 的全部 | 只剩 A 的地方是 A 的，被 B 取代的地方是 B 的 |
+
+### 2.1 聚焦区与两个图层
+胡德山与哥伦比亚河峡谷周边的 6 个县。**森林**来自 NLCD 2021（30 m，保留原始类别代码）；**保护区**来自 **PAD-US 4.1**（USGS Gap Analysis Project）。PAD-US 用 **GAP 等级**记录保护程度：1–2 = 以生物多样性为管理目标；3 = 多用途（例如大部分国家森林用地）；4 = 无已知保护要求。
 """)
 md(r"""
 **Why this study area.** The six counties around Mount Hood and the Columbia River Gorge — Multnomah, Clackamas, Hood River and Wasco (Oregon), Clark and Skamania (Washington), 19,726 km² — were chosen because they contain **every GAP status side by side**: wilderness areas on Mount Hood (GAP 1), wildlife areas and wild-and-scenic rivers (GAP 2), two national forests (Mt. Hood and Gifford Pinchot, GAP 3), and private and city land with no protection mandate. They also run from wet Cascade forest to the dry plateau east of the mountains, so forest and protection both vary. A mostly cropland state such as Illinois would give almost no forest to overlay.
@@ -302,7 +346,8 @@ A = gpd.GeoDataFrame({"A_name": ["forest stand"], "A_ha": [400]}, geometry=[box(
 B = gpd.GeoDataFrame({"B_zone": ["reserve"], "B_gap": [1]}, geometry=[Point(2, 1).buffer(1.1)], crs=3857)
 OPS = {"Clip": gpd.clip(A, B), "Intersect": gpd.overlay(A, B, how="intersection"),
        "Erase": gpd.overlay(A, B, how="difference"), "Union": gpd.overlay(A, B, how="union"),
-       "Identity": gpd.overlay(A, B, how="identity"), "Symmetric difference": gpd.overlay(A, B, how="symmetric_difference")}
+       "Identity": gpd.overlay(A, B, how="identity"),
+       "Update": gpd.GeoDataFrame(pd.concat([gpd.overlay(A, B, how="difference"), B], ignore_index=True), crs=A.crs)}   # A outside B + all of B
 print("Input A (blue square):"); display(A.drop(columns="geometry"))
 print("Input B (amber circle):"); display(B.drop(columns="geometry"))
 fig, axes = plt.subplots(2, 3, figsize=(10.5, 5.4)); axes = axes.ravel()
@@ -318,7 +363,7 @@ fig.text(0.5, 0.02, "A = blue dashed square, a forest stand (A_name, A_ha) · B 
          "teal = the result of the operation", ha="center", fontsize=8, color=PAL["ink"])
 fig.text(0.5, -0.02, "Clip and Intersect draw the same shape but carry different attributes: Clip keeps A's only, Intersect carries A's and B's.",
          ha="center", fontsize=8, color=PAL["ink"])
-save(fig, "overlay_operations.png", 13, pdf=True)
+save(fig, "overlay_operations.png", "12", pdf=True)
 for k, g in OPS.items():                                       # every result's attribute table
     print(f"{k} — {len(g)} row(s):")
     display(g.drop(columns="geometry"))
@@ -326,6 +371,9 @@ for k, g in OPS.items():                                       # every result's 
 md(r"""
 ### 2.3 The same operations on the real layers
 Input A = the six counties; overlay B = PAD-US units with GAP status 1–2. Watch the row count and the attribute list.
+""", r"""
+### 2.3 在真实图层上执行同样的操作
+输入 A = 6 个县；叠加图层 B = GAP 等级为 1–2 的 PAD-US 保护单元。注意输出的行数和属性列。
 """)
 code(r"""
 Acty = focus[["NAME", "STUSPS", "geometry"]]
@@ -334,14 +382,18 @@ real = {"clip": gpd.clip(Acty, Bpa), "intersect": gpd.overlay(Acty, Bpa, how="in
         "erase": gpd.overlay(Acty, Bpa, how="difference", keep_geom_type=True),
         "union": gpd.overlay(Acty, Bpa, how="union", keep_geom_type=True),
         "identity": gpd.overlay(Acty, Bpa, how="identity", keep_geom_type=True),
-        "symmetric difference": gpd.overlay(Acty, Bpa, how="symmetric_difference", keep_geom_type=True)}
+        "update": gpd.GeoDataFrame(pd.concat([gpd.overlay(Acty, Bpa, how="difference", keep_geom_type=True), Bpa],
+                                             ignore_index=True), crs=Acty.crs)}
 display(pd.DataFrame([{"operation": k, "rows out": len(g), "km²": round(g.area.sum() / 1e6),
                        "attributes": ", ".join(c for c in g.columns if c != "geometry")} for k, g in real.items()]).set_index("operation"))
 print(f"inputs: {len(Acty)} counties, {len(Bpa)} protected units (GAP 1-2)")
 """)
 md(r"""
-### 2.4 Forest × protected areas: the conservation gap (slide 14)
+### 2.4 Forest × protected areas: the conservation gap (slide 13)
 **Intersect** gives the protected forest, **erase** gives the gap. Both are reported for two definitions of "protected" — strict (GAP 1–2) and including multiple-use land (GAP 1–3) — because the answer depends on that choice (§6).
+""", r"""
+### 2.4 森林 × 保护地：保护缺口（第 13 页）
+**Intersect** 得到受保护的森林，**Erase** 得到缺口。两种"受保护"的定义都要报告——严格定义（GAP 1–2）和包括多用途土地的宽泛定义（GAP 1–3）——因为答案取决于这个选择（§6）。
 """)
 code(r"""
 inside12 = gpd.overlay(forest, gap12, how="intersection", keep_geom_type=True)      # forest INSIDE strict protection
@@ -415,7 +467,7 @@ for side in ("top", "right"):
     a2.spines[side].set_visible(False)
 a2.set_title(f"(d) {pct12:.0f}% strictly protected,\n{pct123:.0f}% with multiple use", fontsize=9.5)
 source(fig, "USGS PAD-US 4.1 (2024); USGS/MRLC NLCD 2021 (30 m); U.S. Census Bureau counties. EPSG:5070.")
-save(fig, "overlay_policy_forest_protected.png", 14)
+save(fig, "overlay_policy_forest_protected.png", "13")
 
 per = (gpd.overlay(inside12, focus[["NAME", "geometry"]], how="intersection", keep_geom_type=True)
        .assign(km2=lambda d: d.area / 1e6).groupby("NAME").km2.sum())
@@ -431,43 +483,19 @@ cannot("whether protected forest is in better condition than the gap. GAP status
 # =========================================================================================== §3
 md(r"""
 ---
-## 3 · Buffer, Distance and Proximity  (slides 15–21) · **LO 1**
-A **buffer** turns distance into yes/no; a **distance surface** keeps it continuous. *The buffer distance is an assumption* (slide 16): state it and show how far the answer moves when it changes. Distances are measured in metre-based CRSs (EPSG:5070 here, UTM 46N in Cox's Bazar).
-
-### 3.1 Distance to water and development (slide 18)
-Every 30 m cell gets its exact Euclidean distance to the nearest open-water cell (NLCD class 11).
-""")
-code(r"""
-dist = ndimage.distance_transform_edt(lc != 11, sampling=30.0)
-dist = np.where(land, dist, np.nan)
-developed = np.isin(lc, [21, 22, 23, 24]) & land
-edges = np.array([0, 100, 250, 500, 1000, 2000, 5000, np.inf])
-labels = ["0–100", "100–250", "250–500", "0.5–1k", "1–2k", "2–5k", ">5k"]
-band = np.digitize(np.nan_to_num(dist, nan=-1), edges) - 1
-prox = pd.DataFrame([{"distance to water (m)": lab, "land km²": round((land & (band == b)).sum() * CELL_KM2),
-                      "% developed": 100 * (developed & (band == b)).sum() / max((land & (band == b)).sum(), 1)}
-                     for b, lab in enumerate(labels)]).set_index("distance to water (m)")
-display(prox.round(1))
-print(f"median distance to water: developed cells {np.nanmedian(dist[developed]):,.0f} m vs all land {np.nanmedian(dist[land]):,.0f} m")
-
-fig, (a1, a2) = plt.subplots(1, 2, figsize=(11.5, 5), gridspec_kw={"width_ratios": [1.1, 1]})
-im = a1.imshow(np.clip(dist, 0, 5000), extent=lc_ext, cmap=SEQ_BLUE.reversed(), interpolation="nearest")
-focus.boundary.plot(ax=a1, color=PAL["muted"], lw=0.5)
-fig.colorbar(im, ax=a1, shrink=0.7, label="metres to nearest open water (capped at 5 km)")
-a1.set_title("Distance to water: a continuous surface"); a1.set_axis_off()
-a2.bar(prox.index, prox["% developed"], color=PAL["teal"])
-for k, v in enumerate(prox["% developed"]):
-    a2.text(k, v + 0.4, f"{v:.1f}%", ha="center", fontsize=8.5)
-a2.set_ylabel("% of land that is developed (NLCD 21–24)"); a2.set_xlabel("distance to nearest open water (m)")
-a2.set_title("Development by distance band")
-source(fig, "USGS/MRLC NLCD 2021 (30 m), Mount Hood / Columbia Gorge focus area. EPSG:5070.")
-save(fig, "distance_to_water_development.png", 18)
-cannot("that water causes development. Portland grew on the Columbia for transport; terrain, roads and zoning "
-       "co-vary with distance to water. Straight-line distance also ignores that a river is often a barrier.")
+## 3 · Proximity: Distance and Buffer  (slides 14–18) · **LO 1**
+A **buffer** turns distance into yes/no; a **distance surface** keeps it continuous. *The buffer distance is an assumption* (slide 15): state it and show how far the answer moves when it changes. Which distance to measure — straight line, network, travel time or cost — is a choice too (slide 16). Distances are measured in metre-based CRSs (EPSG:5070 for the focus area, UTM 46N in Cox's Bazar).
+""", r"""
+---
+## 3 · 邻近：距离与缓冲区（第 14–18 页）· **学习目标 1**
+**缓冲区**把距离变成"是/否"；**距离面**则保留连续的距离值。*缓冲距离本身就是一个假设*（第 15 页）：要写明它，并展示改变它时答案会移动多远。测量哪一种距离——直线、路网、行程时间还是成本距离——同样是一个选择（第 16 页）。距离都在以米为单位的坐标系中计算（聚焦区用 EPSG:5070，考克斯巴扎尔用 UTM 46N）。
 """)
 md(r"""
-### 3.2 Humanitarian track: refugee camps and conflict events (slides 19–20)
+### 3.1 Buffer analysis: refugee camps and conflict events (slide 17)
 *"Which refugee camps fall within X km of conflict zones?"* — the syllabus task, on real data: the 33 camp outlines of the **Rohingya camps in Cox's Bazar** (ISCG, CC0) and **UCDP GED 2023** events within 300 km. Camps are kept as **whole-camp polygons**: no blocks, no shelters, nothing that locates households.
+""", r"""
+### 3.1 缓冲区分析：难民营与冲突事件（第 17 页）
+*"哪些难民营位于冲突区 X 公里以内？"*——课程大纲中的任务，用真实数据来做：**考克斯巴扎尔罗兴亚难民营**的 33 个营地轮廓（ISCG，CC0）和 300 km 范围内的 **UCDP GED 2023** 事件。营地保持为**整营多边形**：没有街区、没有住所，没有任何能定位到家庭的信息。
 """)
 code(r"""
 camps = gpd.read_file(VEC8 / "coxsbazar_camps_2023.shp")                     # EPSG:32646 (UTM 46N, metres)
@@ -519,7 +547,49 @@ a2.set_xlabel("buffer radius (km, log scale)"); a2.set_ylabel("% of the 33 camps
 a2.legend(loc="lower right", fontsize=8); a2.grid(alpha=0.25)
 a2.set_title(f"Same camps, same events: {min(share1 + share3):.0f}%–{max(share1 + share3):.0f}% depending on the radius and the rule")
 source(fig, "ISCG/RRRC camp outlines (HDX, 2023, CC0); UCDP GED v24.1 (2023, CC BY 4.0); Natural Earth. UTM 46N.")
-save(fig, "buffer_sensitivity.png", 20)
+save(fig, "buffer_sensitivity.png", "17")
+""")
+md(r"""
+### 3.2 Distance to water and development (slide 18)
+Every 30 m cell gets its exact Euclidean distance to the nearest open-water cell (NLCD class 11).
+""", r"""
+### 3.2 到水体的距离与开发程度（第 18 页）
+每个 30 m 像元都计算出它到最近开放水体像元（NLCD 第 11 类）的精确欧氏距离。
+""")
+code(r"""
+dist = ndimage.distance_transform_edt(lc != 11, sampling=30.0)
+dist = np.where(land, dist, np.nan)
+developed = np.isin(lc, [21, 22, 23, 24]) & land
+edges = np.array([0, 100, 250, 500, 1000, 2000, 5000, np.inf])
+labels = ["0–100", "100–250", "250–500", "0.5–1k", "1–2k", "2–5k", ">5k"]
+band = np.digitize(np.nan_to_num(dist, nan=-1), edges) - 1
+prox = pd.DataFrame([{"distance to water (m)": lab, "land km²": round((land & (band == b)).sum() * CELL_KM2),
+                      "% developed": 100 * (developed & (band == b)).sum() / max((land & (band == b)).sum(), 1)}
+                     for b, lab in enumerate(labels)]).set_index("distance to water (m)")
+display(prox.round(1))
+print(f"median distance to water: developed cells {np.nanmedian(dist[developed]):,.0f} m vs all land {np.nanmedian(dist[land]):,.0f} m")
+
+fig, (a1, a2) = plt.subplots(1, 2, figsize=(11.5, 5), gridspec_kw={"width_ratios": [1.1, 1]})
+im = a1.imshow(np.clip(dist, 0, 5000), extent=lc_ext, cmap=SEQ_BLUE.reversed(), interpolation="nearest")
+focus.boundary.plot(ax=a1, color=PAL["muted"], lw=0.5)
+fig.colorbar(im, ax=a1, shrink=0.7, label="metres to nearest open water (capped at 5 km)")
+a1.set_title("Distance to water: a continuous surface"); a1.set_axis_off()
+a2.bar(prox.index, prox["% developed"], color=PAL["teal"])
+for k, v in enumerate(prox["% developed"]):
+    a2.text(k, v + 0.4, f"{v:.1f}%", ha="center", fontsize=8.5)
+a2.set_ylabel("% of land that is developed (NLCD 21–24)"); a2.set_xlabel("distance to nearest open water (m)")
+a2.set_title("Development by distance band")
+source(fig, "USGS/MRLC NLCD 2021 (30 m), Mount Hood / Columbia Gorge focus area. EPSG:5070.")
+save(fig, "distance_to_water_development.png", "18")
+cannot("that water causes development. Portland grew on the Columbia for transport; terrain, roads and zoning "
+       "co-vary with distance to water. Straight-line distance also ignores that a river is often a barrier.")
+""")
+md(r"""
+### 3.3 The proximity toolbox *(supplementary — not in the slides)*
+Three answers to "what is near?" on the same camp centres: a buffer, a multiple-ring buffer and Thiessen (Voronoi) polygons.
+""", r"""
+### 3.3 邻近分析工具箱 *（补充内容——课件中未使用）*
+对同一组营地中心点给出"什么算近？"的三种答案：缓冲区、多环缓冲区和泰森（Voronoi）多边形。
 """)
 code(r"""
 from shapely.geometry import MultiPoint
@@ -545,14 +615,17 @@ for ax in axes:
     cp.plot(ax=ax, color=PAL["terra"], markersize=9, zorder=5)
     ax.set_xlim(x0, x1); ax.set_ylim(y0, y1); ax.set_aspect("equal"); ax.set_axis_off()
 source(fig, "ISCG/RRRC camp outlines, Cox's Bazar (HDX, 2023, CC0); camp centres = representative points. UTM 46N.")
-save(fig, "proximity_toolbox.png", 19, pdf=True)
+save(fig, "proximity_toolbox.png", "supplementary", pdf=True)
 cannot("that a camp near an event is at higher risk. UCDP geocodes events at different precisions (where_prec), "
        "Euclidean buffers ignore the border, the Naf river and roads, and 2023 is one year. Thiessen polygons "
        "assume people use the nearest point, which camp boundaries contradict.")
 """)
 md(r"""
-### 3.3 Data preprocessing: dissolve and integrate (slide 21)
+### 3.4 Data preprocessing: dissolve and integrate *(supplementary — not in the slides; Lab Task 1 needs Dissolve)*
 **Dissolve** merges features that share a value. PAD-US records overlap (a wilderness inside a national forest inside a scenic area), so summing the raw records double-counts land. **Integrate** makes vertices within a tolerance coincide, removing slivers between neighbours — here between PAD-US *fee* parcels whose shared edges were generalised independently.
+""", r"""
+### 3.4 数据预处理：融合与拼接 *（补充内容——课件中未使用；上机任务 1 需要融合）*
+**Dissolve（融合）**把属性值相同的要素合并。PAD-US 的记录互相重叠（荒野区套在国家森林里、国家森林又套在风景区里），所以直接对原始记录求和会重复计算面积。**Integrate（拼接）**让容差范围内的顶点重合，消除相邻要素之间的细小缝隙和重叠——这里是 PAD-US *fee*（产权）地块之间，它们的公共边是分别简化的。
 """)
 code(r"""
 raw_sum = pad.area.sum() / 1e6
@@ -605,23 +678,23 @@ axes[3].legend([Patch(color=PAL["purple"]), Patch(color=PAL["terra"])], ["sliver
 for ax in axes:
     ax.set_aspect("equal"); ax.set_axis_off()
 source(fig, "USGS PAD-US 4.1 (2024), Mount Hood / Columbia Gorge focus area; slivers < 2 ha. EPSG:5070.")
-save(fig, "data_preprocessing_dissolve_integrate.png", 21, pdf=True)
+save(fig, "data_preprocessing_dissolve_integrate.png", "supplementary", pdf=True)
 print(f"Integrate also deleted {len(fee) - len(fee_int)} parcels smaller than the {TOL} m tolerance — the tolerance is a choice too.")
 """)
 
 # =========================================================================================== §4
 md(r"""
 ---
-## 4 · Patterns, Clusters and Hotspots  (slides 22–29) · **LO 2**
-*Is this pattern real, or could chance produce it?* (slide 24). Compute a statistic, reshuffle the values across the same geography many times, and see where the real value falls. §4.1 and §4.3 use the contiguous-U.S. counties and the queen weights from §1; §4.4 compares three point layers: earthquakes, random points and county points.
+## 4 · Patterns, Clusters and Hotspots  (slides 19–24) · **LO 2**
+*Is this pattern real, or could chance produce it?* (slides 20–22). Compute a statistic, reshuffle the values across the same geography many times, and see where the real value falls. §4.1 and §4.3 use the contiguous-U.S. counties and the queen weights from §1; §4.4 compares three point layers: earthquakes, random points and county points.
 
-### 4.1 Global Moran's I and LISA (slide 25)
+### 4.1 Global Moran's I and LISA (slides 21–22)
 """, r"""
 ---
-## 4 · 格局、聚类与热点（第 22–29 页）· **学习目标 2**
-*这个格局是真实的，还是偶然也能产生？*（第 24 页）。先算一个统计量，再把数值在同一地理单元上随机打乱很多次，看真实值落在随机分布的什么位置。§4.1 和 §4.3 使用美国本土各县和 §1 构建的 queen 邻接权重；§4.4 比较三个点图层：地震、随机点和县代表点。
+## 4 · 格局、聚类与热点（第 19–24 页）· **学习目标 2**
+*这个格局是真实的，还是偶然也能产生？*（第 20–22 页）。先算一个统计量，再把数值在同一地理单元上随机打乱很多次，看真实值落在随机分布的什么位置。§4.1 和 §4.3 使用美国本土各县和 §1 构建的 queen 邻接权重；§4.4 比较三个点图层：地震、随机点和县代表点。
 
-### 4.1 全局 Moran's I 与 LISA（第 25 页）
+### 4.1 全局 Moran's I 与 LISA（第 21–22 页）
 """)
 code(r"""
 z = R.poverty_pct.values - R.poverty_pct.mean()
@@ -668,15 +741,18 @@ axes[2].annotate(f"observed\nI = {moran_I:.2f}\n{int((I_null >= moran_I).sum())}
                  xytext=(-6, 0), textcoords="offset points", ha="right", va="top", color=PAL["terra"], fontsize=8.5, fontweight="bold")
 axes[2].set_yticks([]); axes[2].set_xlabel("Moran's I in 999 random reshuffles"); axes[2].set_title("Permutation null")
 source(fig, f"U.S. Census Bureau ACS 2018–2022 (% below poverty); {n:,} contiguous-U.S. counties, queen contiguity, 999 permutations.")
-save(fig, "clusters_moran_lisa.png", 25)
+save(fig, "clusters_moran_lisa.png", "22, 24")
 print(f"Global Moran's I = {moran_I:.3f}, pseudo p = {p_moran:.3f}, n = {n}; LISA classes: {cnt.to_dict()}")
 print(f"999 reshuffles: I from {I_null.min():.3f} to {I_null.max():.3f}")
 for k in ["High-High", "Low-Low"]:
     print(f"{k} counties by state (top 8):", R[R.lisa == k].state_abbr.value_counts().head(8).to_dict())
 """)
 md(r"""
-### 4.2 Correlation between two variables (slides 28–29)
-Figure 7 asks whether **one** variable resembles itself across space (autocorrelation). Slides 28–29 ask whether **two** co-located variables move together. Here: forest share and elevation on a ~5 km grid over the focus area.
+### 4.2 Correlation between two variables *(supplementary — not in the slides)*
+Figure 7 asks whether **one** variable resembles itself across space (autocorrelation). This asks whether **two** co-located variables move together. Here: forest share and elevation on a ~5 km grid over the focus area.
+""", r"""
+### 4.2 两个变量之间的相关 *（补充内容——课件中未使用）*
+图 7 问的是**一个**变量在空间上是否与自身相似（自相关）。这里问的是**两个**位于同一地点的变量是否同步变化：在聚焦区约 5 km 的网格上，比较森林比例和海拔。
 """)
 code(r"""
 with rasterio.open(RAS8 / "focus_srtm_90m.tif") as src:
@@ -716,11 +792,14 @@ axes[2].scatter(elev[okc], forest_pct[okc], s=10, color=PAL["green"], alpha=0.6,
 axes[2].set_xlabel("mean elevation (m)"); axes[2].set_ylabel("% forest (NLCD 41–43)")
 axes[2].set_title(f"r = {r_p:.2f} · Spearman ρ = {r_s:.2f}\nn = {okc.sum()} cells of ~5 km")
 source(fig, "USGS SRTM (90 m); USGS/MRLC NLCD 2021 (30 m); ~5 km cells over the Mount Hood / Columbia Gorge focus area.")
-save(fig, "spatial_correlation_two_variables.png", 29)
+save(fig, "spatial_correlation_two_variables.png", "supplementary")
 """)
 md(r"""
-### 4.3 Hot and cold spots: Getis-Ord Gi* (slide 26)
-Gi\* includes the county itself and asks whether the **local sum** is unusually high or low.
+### 4.3 Hot and cold spots: Getis-Ord Gi* (slides 23–24)
+Gi\* includes the county itself and asks whether the **local sum** is unusually high or low. The circled counties are where LISA and Gi\* disagree (slide 24).
+""", r"""
+### 4.3 热点与冷点：Getis-Ord Gi*（第 23–24 页）
+Gi\* 把县本身也算在内，判断"局部总和"是否异常地高或低。图中圈出的县是 LISA 与 Gi\* 结论不一致的地方（第 24 页）。
 """)
 code(r"""
 Wstar = Wb + sparse.eye(n, format="csr")
@@ -754,7 +833,7 @@ for name, st, off in DISAGREE:
                  "LISA p": round(p_loc[i], 3), "Gi* z": round(Gi[i], 2), "Gi* class": R.gi_class[i]})
 source(fig, f"U.S. Census Bureau ACS 2018–2022 (% below poverty); {n:,} contiguous-U.S. counties; Gi* with binary queen weights + self. "
             "Circled: counties where LISA and Gi* disagree.")
-save(fig, "hotspots_getis_ord.png", 26)
+save(fig, "hotspots_getis_ord.png", "23–24")
 display(pd.DataFrame(rows).set_index("county"))
 print(gcount.to_string())
 print(f"Counties both LISA High-High and Gi* hot: {((Gi > 1.96) & (R.lisa == 'High-High')).sum()}")
@@ -762,7 +841,9 @@ for k in ["Hot spot 99%", "Cold spot 99%"]:
     print(f"{k} by state (top 8):", R[R.gi_class == k].state_abbr.value_counts().head(8).to_dict())
 """)
 md(r"""
-### 4.4 Point patterns: clustered, random or dispersed? (slide 27)
+### 4.4 Point patterns: clustered, random or dispersed? (appendix, slide 47)
+""", r"""
+### 4.4 点格局：聚集、随机还是分散？（附录，第 47 页）
 """)
 code(r"""
 quakes = gpd.read_file(VEC / "usgs_earthquakes_2025_m25.shp").to_crs(ALBERS)
@@ -818,7 +899,7 @@ ax.set_xlabel("Clark-Evans R = observed mean nearest-neighbour distance ÷ dista
 for side in ("top", "right", "left"):
     ax.spines[side].set_visible(False)
 source(fig, "USGS Earthquake Catalog 2025 (M ≥ 2.5, on land); U.S. Census Bureau counties. Study area: contiguous U.S. (left, centre); Iowa, Kansas, Nebraska (right).")
-save(fig, "point_pattern_nn.png", 27)
+save(fig, "point_pattern_nn.png", "47 (appendix)")
 display(pd.DataFrame({name: {"n": len(xy), "mean NN km": round(ce[name][0] / 1000, 1),
                              "expected if random km": round(ce[name][1] / 1000, 1),
                              "R": round(ce[name][2], 2), "z": round(ce[name][3], 1)}
@@ -833,8 +914,12 @@ cannot("why counties or events cluster. Moran's I and Gi* describe similarity am
 # =========================================================================================== §5
 md(r"""
 ---
-## 5 · Remote Sensing and Machine Learning  (slides 30–37) · **LO 3**
-GIS starts from objects; remote sensing starts from a **signal**. The pipeline below — reflectance → index → classified objects — is the poverty-from-space workflow (slide 37) in miniature, on the **Sentinel-2** scene of Champaign–Urbana from the Week 7 pack (4 bands, 10 m, summer 2023), with **NLCD 2021** as training labels.
+## 5 · Remote Sensing and Machine Learning  (slides 25–30) · **LO 3**
+GIS starts from objects; remote sensing starts from a **signal** (slide 26). The pipeline below — reflectance → index → classified pixels — is the image-classification step of slide 28, and the first stage of the poverty-from-space workflow of slide 29, on the **Sentinel-2** scene of Champaign–Urbana (4 bands, 10 m, summer 2023), with **NLCD 2021** as training labels.
+""", r"""
+---
+## 5 · 遥感与机器学习（第 25–30 页）· **学习目标 3**
+GIS 从"对象"出发；遥感从"信号"出发（第 26 页）。下面的流程——反射率 → 指数 → 分类后的像元——就是第 28 页的影像分类步骤，也是第 29 页"从卫星影像预测贫困"流程的第一步。数据是香槟–厄巴纳的 **Sentinel-2** 影像（4 个波段，10 m，2023 年夏季），以 **NLCD 2021** 作为训练标签。
 """)
 code(r"""
 with rasterio.open(RAS / "champaign_sentinel2_2023_10m.tif") as src:
@@ -888,7 +973,7 @@ axes[3].legend([Patch(color=CH_CMAP[c]) for c in classes], [CH_LABEL[c] for c in
 for a in axes:
     a.set_axis_off()
 source(fig, "Copernicus Sentinel-2 L2A (Jun–Sep 2023 median, 10 m); labels USGS/MRLC NLCD 2021. Champaign–Urbana, IL.")
-save(fig, "rs_ndvi_classification.png", 32)
+save(fig, "rs_ndvi_classification.png", "28, 48 (appendix)")
 """)
 code(r"""
 cm = confusion_matrix(yte, pred, labels=classes)
@@ -916,7 +1001,7 @@ fig.text(0.01, -0.2, f"Overall accuracy {acc:.2f} — dominated by the common cl
          fontsize=7.5, color=PAL["muted"])
 fig.text(0.01, -0.235, "Source: Random forest on Sentinel-2 (5 features) vs NLCD 2021 labels; 30 % held-out pixels.",
          fontsize=6, color=PAL["muted"], va="top")
-save(fig, "ml_confusion_matrix.png", 36)
+save(fig, "ml_confusion_matrix.png", "supplementary")
 display(pd.DataFrame({"recall": recall.round(3), "test pixels": pd.Series(cm.sum(axis=1), index=names)}).sort_values("recall"))
 cannot("how well the model sees the ground. It reproduces another classification (NLCD at 150 m) from 10 m pixels, "
        "so some 'errors' belong to the labels; one scene and one season; accuracy depends on which classes were kept.")
@@ -925,10 +1010,16 @@ cannot("how well the model sees the ground. It reproduces another classification
 # =========================================================================================== §6
 md(r"""
 ---
-## 6 · Policy and the Politics of Categories  (slides 38–43) · **LO 4**
-Robbins (2001): land-cover categories are **decisions that become infrastructure**. Three demonstrations.
+## 6 · Policy and the Politics of Categories  (slides 31–34) · **LO 4**
+Slide 32 names two problems: **the units problem** (where do the boundaries go? — the MAUP, and gerrymandering on slide 33) and **the category problem** (what do the classes mean? — Robbins 2001 on slide 34). Two demonstrations on our own data.
 
-### 6.1 Who defines "forest" — and "protected"? (slide 40)
+### 6.1 Who defines "forest" — and "protected"? *(supplementary — the category problem of slide 34, on our data)*
+""", r"""
+---
+## 6 · 政策与"类别的政治"（第 31–34 页）· **学习目标 4**
+第 32 页提出两个问题：**单元问题**（边界画在哪里？——即可变面积单元问题 MAUP，以及第 33 页的选区划分操纵）和**类别问题**（类别是什么意思？——第 34 页的 Robbins 2001）。下面用我们自己的数据做两个演示。
+
+### 6.1 谁来定义"森林"——以及"受保护"？*（补充内容——用我们的数据演示第 34 页的类别问题）*
 """)
 code(r"""
 def patch_filter(mask, min_km2):
@@ -959,7 +1050,7 @@ ax.invert_yaxis(); ax.set_xlim(0, fd["km²"].max() * 1.28); ax.set_xlabel("km² 
 ax.set_title(f"Same pixels, five definitions: {fd['km²'].min():,.0f}–{fd['km²'].max():,.0f} km² "
              f"(×{fd['km²'].max() / fd['km²'].min():.2f})")
 source(fig, "USGS/MRLC NLCD 2021 (30 m), Mount Hood / Columbia Gorge focus area; patches = 8-connected.")
-save(fig, "categories_forest_definitions.png", 40)
+save(fig, "categories_forest_definitions.png", "supplementary")
 
 prot = pd.DataFrame({"definition of 'protected'": ["GAP 1 only (wilderness-like)", "GAP 1–2 (managed for biodiversity)",
                                                    "GAP 1–3 (+ multiple use)", "any PAD-US record (GAP 1–4)"],
@@ -968,7 +1059,9 @@ prot["% of focus area"] = 100 * prot["km² (dissolved)"] / (focus.area.sum() / 1
 display(prot.round(1).set_index("definition of 'protected'"))
 """)
 md(r"""
-### 6.2 MAUP: the same events, two aggregations (slide 41)
+### 6.2 MAUP: the same events, two aggregations (the units problem of slide 32; figure in the appendix, slide 50)
+""", r"""
+### 6.2 MAUP：同样的事件，两种汇总方式（第 32 页的单元问题；图在附录第 50 页）
 """)
 code(r"""
 ged = pd.read_csv(TAB / "ucdp_ged_events_2023.csv")
@@ -1008,11 +1101,21 @@ for ax, (share, k50, nu), ttl, tops in [
     ax.text(0.99, 0.02, "top 3: " + " · ".join(tops), transform=ax.transAxes, ha="right", fontsize=6.5, color=PAL["ink"])
     ax.set_axis_off()
 source(fig, "UCDP GED v24.1, 2023 (24,205 events, best death estimates); Natural Earth; Equal Earth projection.")
-save(fig, "maup_two_aggregations.png", 41)
+save(fig, "maup_two_aggregations.png", "50 (appendix)")
 print(f"countries: top {cc[0]:.1f}%, {cc[1]} units hold half | 500 km cells: top {cg[0]:.1f}%, {cg[1]} units hold half")
 """)
 md(r"""
-### 6.3 Ethics: exact points vs an aggregated rate (slide 43)
+---
+## 7 · Ethics, Representation and Data Use  (slides 35–43) · **LO 4**
+An analysis can be arithmetically correct and still wrong about people (slide 36): who is in the data, whose choices became the analysis, and what the output makes possible.
+
+### 7.1 Exact points or an aggregated rate? (slide 39, "Aggregation is not anonymity"; figure in the appendix, slide 56)
+""", r"""
+---
+## 7 · 伦理、表征与数据使用（第 35–43 页）· **学习目标 4**
+一项分析可以在算术上完全正确，却仍然对人造成错误的结论（第 36 页）：数据里有谁、谁的选择变成了分析，以及输出结果让什么成为可能。
+
+### 7.1 精确点位还是汇总比率？（第 39 页"汇总不等于匿名"；图在附录第 56 页）
 """)
 code(r"""
 wc = wmap.copy()
@@ -1029,47 +1132,58 @@ axes[1].set_title("Aggregated to country rates: the pattern survives")
 for a in axes:
     a.set_axis_off()
 source(fig, "UCDP GED v24.1 (2023); Natural Earth population estimates; Equal Earth projection.")
-save(fig, "ethics_point_vs_aggregated.png", 43)
+save(fig, "ethics_point_vs_aggregated.png", "56 (appendix)")
 cannot("which aggregation is 'correct' — the MAUP has no neutral unit — or that the aggregated map is harmless; "
        "small countries can still be re-identified. The forest and protected areas above change by definition alone, "
        "so any target or subsidy built on them inherits that choice.")
 """)
 
-# =========================================================================================== §7
+# =========================================================================================== §7 discussion
 md(r"""
----
-## 7 · Discussion and AI Engagement  (slides 44–46)
-**Who defines the categories?** Use §6.1: the focus area has between the smallest and the largest forest figure without a pixel changing, and strict protection covers a fraction of what "any PAD-US record" suggests. If a plot is "degraded forest" rather than "pastoral commons", who gains and who loses?
+### 7.2 Discussion: who chose, and who can argue? (slides 42–43)
+Four groups, one question each (slide 42); report the strongest objection you could not answer.
+1. **A number you chose, not found.** Pick one value from this notebook that was decided rather than measured — the buffer radius (§3.1), the GAP threshold (§2.4), the forest definition (§6.1), the aggregation unit (§6.2) — and say what would change at another value.
+2. **One number, three desks.** The forest share in §2.4 lands on a forest department writing a budget bid, a journalist and an NGO protecting grazing rights. What can each of them do with it?
+3. **The request you cannot simply refuse.** A ministry asks for the exact camp-level conflict map of §3.1 "to target aid". What do you hand over, at what resolution, and what do you write in the cover note?
 
-**AI task.** Prompt an AI for an **analysis** (not a map) with the brief below, then compare it with your own on three points: did it justify the buffer distance, state the unit and the MAUP risk, and name a limit?
-""")
-code(r"""
-BRIEF = '''
-Propose a spatial analysis for [policy question], using [layers], at [unit of analysis].
-OPERATION — overlay (which of clip/intersect/erase/union/identity), buffer, proximity or cluster detection; what each assumes.
-  If a buffer: give the distance AND justify it; show the result at two other distances.
-  If clustering: name the statistic, the weights and the null model.
-DATA AND UNITS — CRS (equal-area for areas, metres for distances; EPSG code); unit of analysis and its MAUP risk;
-  counts, per-capita rates or per-km² densities, and why.
-OUTPUT AND LIMITS — one sentence of interpretation and one sentence on what the analysis CANNOT establish;
-  whether the output locates vulnerable people precisely (if so, aggregate first).
-DO NOT — report a p-value without the null model, an accuracy without per-class results, or invent a layer.
-'''
-print(BRIEF)
+Case-study questions (slide 43, Jean et al. 2016 and Robbins 2001): What category, threshold or proxy does the analysis require? What theoretical assumption does that choice contain? How could another reasonable choice change the result? Who benefits from the resulting policy, and who may be disadvantaged? Who has the authority to challenge the category or model?
+""", r"""
+### 7.2 讨论：谁做了选择，谁能提出异议？（第 42–43 页）
+分成四组，每组一个问题（第 42 页）；汇报你们无法回答的最有力的反对意见。
+1. **一个是"选"出来、而不是"测"出来的数字。** 从本 notebook 中挑一个人为决定而非测量得到的数值——缓冲半径（§3.1）、GAP 门槛（§2.4）、森林定义（§6.1）、汇总单元（§6.2）——说明换一个数值会改变什么。
+2. **同一个数字，三张办公桌。** §2.4 的森林保护比例分别落到正在写预算申请的林业部门、一名记者、一个维护放牧权的 NGO 手里。他们各自能用它做什么？
+3. **一个不能简单拒绝的请求。** 某部委要求获得 §3.1 中营地级别的精确冲突地图，"用于定向援助"。你交出什么、用什么分辨率，在附信里写什么？
+
+案例讨论题（第 43 页，Jean 等 2016 与 Robbins 2001）：这项分析需要什么类别、门槛或代理变量？这个选择包含什么理论假设？换一个同样合理的选择会如何改变结果？谁从由此产生的政策中获益，谁可能受损？谁有权质疑这个类别或模型？
 """)
 
 # =========================================================================================== §8
 md(r"""
 ---
-## 8 · Lab and Deliverable  (slides 47–49) · **LO 5**
-| Time | Step (slide 48) | QGIS |
-|---|---|---|
-| 0–15′ | Overlay: forest × protected areas; measure the gap | `focus_nlcd2021_30m.tif` → *Raster ▸ Conversion ▸ Polygonize* (or reclassify), `padus41_mthood_gorge.shp` filtered `"GAP_Sts" <= '2'` → *Vector ▸ Geoprocessing ▸ Intersection / Difference* |
-| 15–30′ | Buffer around conflict events; which camps fall inside? | `ucdp_ged_2023_near_camps.csv` (*Add Delimited Text Layer*, EPSG:4326) → reproject to EPSG:32646 → *Buffer* at two distances → *Select by Location* on `coxsbazar_camps_2023.shp` |
-| 30–40′ | Pick one: a spatial statistic · Earth Engine task · OSINT overlay | GeoDa on `us_counties_acs2022.shp` (Moran/LISA); or `ucdp_ged_events_2023.csv` aggregated by country |
-| 40–55′ | Export maps; write the memo | *Project ▸ New Print Layout* |
+## 8 · Lab Activities  (slides 44–45) · **LO 5**
+The 60-minute lab (GIS Workshop II) uses the student package `GLBL570_Week8_Lab/` — one data folder per task and a 7-page guide with QGIS steps and self-check numbers. Each task repeats an analysis above in QGIS:
 
-**Deliverable (slide 49):** exported map(s) + a 200–300-word memo with **one policy implication**; optional OSINT and AI reflections.
+| Time | Task | Folder | Notebook section |
+|---|---|---|---|
+| 0–15′ | Overlay: forest × PAD-US protected areas — how much forest is protected (GAP 1–2 vs 1–3)? | `Task1_Overlay/` | §2.4 (and §3.4: dissolve before measuring area) |
+| 15–30′ | Buffer: how many of the 33 camps lie within 1 / 5 / 10 km of a 2023 conflict event? | `Task2_Buffer/` | §3.1 |
+| 30–45′ | Image classification with the QGIS SCP plug-in: random forest, summer only vs summer + spring | `Task3_Image_Classification/` | §5 |
+| 45–55′ | Export the result map(s); write a 200–300-word memo with **one policy implication** | `Task4_Memo/` | the memo below |
+
+Optional after class: spatial statistics in GeoDa (§4) and OSINT aggregation of conflict events (§6.2, §7.1).
+""", r"""
+---
+## 8 · 实验活动（第 44–45 页）· **学习目标 5**
+60 分钟的上机实验（GIS Workshop II）使用学生实验包 `GLBL570_Week8_Lab/`——每个任务一个数据文件夹，外加一份 7 页的讲义（QGIS 操作步骤和自查数字）。每个任务都是在 QGIS 中重做上面的一项分析：
+
+| 时间 | 任务 | 文件夹 | 对应 notebook 小节 |
+|---|---|---|---|
+| 0–15′ | 叠加：森林 × PAD-US 保护地——有多少森林受保护（GAP 1–2 与 1–3）？ | `Task1_Overlay/` | §2.4（以及 §3.4：先融合再算面积） |
+| 15–30′ | 缓冲区：33 个营地中有多少位于 2023 年冲突事件 1 / 5 / 10 km 以内？ | `Task2_Buffer/` | §3.1 |
+| 30–45′ | 用 QGIS 的 SCP 插件做影像分类：随机森林，只用夏季影像 vs 夏季 + 春季 | `Task3_Image_Classification/` | §5 |
+| 45–55′ | 导出结果地图；写一份 200–300 字、含**一条政策含义**的备忘录 | `Task4_Memo/` | 下面的备忘录 |
+
+课后可选：在 GeoDa 中做空间统计（§4），以及冲突事件的 OSINT 汇总（§6.2、§7.1）。
 """)
 code(r"""
 memo = f'''# Week 8 workflow memo
@@ -1112,24 +1226,26 @@ print("QGIS layers written to", gpkg)
 """)
 md(r"""
 ### Figure checklist and headline numbers
+""", r"""
+### 图片清单与关键数字
 """)
 code(r"""
-EXPECTED = {"spatial_shuffle_test.png": 10,
-            "overlay_operations.png": 13,
-            "overlay_policy_forest_protected.png": 14,
-            "distance_to_water_development.png": 18,
-            "proximity_toolbox.png": 19,
-            "buffer_sensitivity.png": 20,
-            "data_preprocessing_dissolve_integrate.png": 21,
-            "clusters_moran_lisa.png": 25,
-            "hotspots_getis_ord.png": 26,
-            "point_pattern_nn.png": 27,
-            "spatial_correlation_two_variables.png": 29,
-            "rs_ndvi_classification.png": 32,
-            "ml_confusion_matrix.png": 36,
-            "categories_forest_definitions.png": 40,
-            "maup_two_aggregations.png": 41,
-            "ethics_point_vs_aggregated.png": 43}
+EXPECTED = {"spatial_shuffle_test.png": "9",
+            "overlay_operations.png": "12",
+            "overlay_policy_forest_protected.png": "13",
+            "buffer_sensitivity.png": "17",
+            "distance_to_water_development.png": "18",
+            "proximity_toolbox.png": "supplementary",
+            "data_preprocessing_dissolve_integrate.png": "supplementary",
+            "clusters_moran_lisa.png": "22, 24",
+            "hotspots_getis_ord.png": "23–24",
+            "point_pattern_nn.png": "47 (appendix)",
+            "spatial_correlation_two_variables.png": "supplementary",
+            "rs_ndvi_classification.png": "28, 48 (appendix)",
+            "ml_confusion_matrix.png": "supplementary",
+            "categories_forest_definitions.png": "supplementary",
+            "maup_two_aggregations.png": "50 (appendix)",
+            "ethics_point_vs_aggregated.png": "56 (appendix)"}
 table = pd.DataFrame([{"figure": f, "deck slide": s, "written": (OUT / f).exists(),
                        "kB": round((OUT / f).stat().st_size / 1024) if (OUT / f).exists() else None} for f, s in EXPECTED.items()])
 display(table.set_index("figure"))

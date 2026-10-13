@@ -2,9 +2,9 @@
 
 Companion notebook, lab materials and data for Week 8 (Module 4, GIS weeks 7–8).
 
-- **`GLBL570_Week8_Spatial_Analysis_Lab.ipynb`** follows the eight chapters of the Week 8 lecture (from mapping to analysis ·
-  overlay · buffer and proximity · clusters and hotspots · remote sensing and machine learning · the politics of categories ·
-  discussion · lab) and writes the 16 figures the lecture deck uses into `outputs/`. Every figure is followed by a
+- **`GLBL570_Week8_Spatial_Analysis_Lab.ipynb`** follows the eight chapters of the Week 8 lecture (what is spatial analysis ·
+  overlay · proximity: distance and buffer · clusters and hotspots · remote sensing and machine learning · the politics of categories ·
+  ethics, representation and data use · lab activities) and writes 16 figures into `outputs/` — 11 used in the lecture deck, 5 supplementary. Every figure is followed by a
   "Reading the figure" cell (data · what we did · what it shows), and every analytical section ends with a `CANNOT ESTABLISH:` line.
 - **`GLBL570_Week8_Lab/`** is the self-contained hands-on lab (GIS Workshop II) for students: one folder per task, the lab guide and a README.
 
@@ -41,11 +41,13 @@ Companion notebook, lab materials and data for Week 8 (Module 4, GIS weeks 7–8
 Give students `GLBL570_Week8_Lab/` (or the ZIP made by `python scripts/make_lab_package_week8.py`). They need QGIS 3.28+,
 the Semi-Automatic Classification Plugin with scikit-learn (Task 3), and GeoDa only for Extension A.
 
-## Figures (lecture deck v4 slide → file in `outputs/`)
-10 `spatial_shuffle_test` · 13 `overlay_operations` · 14 `overlay_policy_forest_protected` · 18 `distance_to_water_development` ·
-19 `proximity_toolbox` · 20 `buffer_sensitivity` · 21 `data_preprocessing_dissolve_integrate` · 25 `clusters_moran_lisa` ·
-26 `hotspots_getis_ord` · 27 `point_pattern_nn` · 29 `spatial_correlation_two_variables` · 32 `rs_ndvi_classification` ·
-36 `ml_confusion_matrix` · 40 `categories_forest_definitions` · 41 `maup_two_aggregations` · 43 `ethics_point_vs_aggregated`
+## Figures (lecture deck slide → file in `outputs/`)
+Slide numbers follow the final Week 8 deck (56 slides, slide order).
+9 `spatial_shuffle_test` · 12 `overlay_operations` · 13 `overlay_policy_forest_protected` · 17 `buffer_sensitivity` ·
+18 `distance_to_water_development` · 22, 24 `clusters_moran_lisa` · 23–24 `hotspots_getis_ord` · 28 `rs_ndvi_classification` ·
+appendix: 47 `point_pattern_nn` · 48 `rs_ndvi_classification` · 50 `maup_two_aggregations` · 56 `ethics_point_vs_aggregated`.
+Supplementary (not in the slides; used by the lab or extending a slide with our data): `proximity_toolbox` ·
+`data_preprocessing_dissolve_integrate` · `spatial_correlation_two_variables` · `ml_confusion_matrix` · `categories_forest_definitions`.
 
 ## Rebuilding the data (optional)
 `requests` for `build_lab_data_week8.py`; `earthengine-api`, `google-auth` and an Earth Engine service-account key for

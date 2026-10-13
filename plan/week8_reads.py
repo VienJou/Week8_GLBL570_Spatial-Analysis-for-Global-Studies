@@ -5,7 +5,7 @@ Numbers come from the seeded run (RNG 570); build_week8_notebook.py checks them 
 """
 
 INTRO_22_EN = r"""
-### 2.2 The six operations on two simple shapes (slide 13)
+### 2.2 The six operations on two simple shapes (slide 12)
 Before the real data, two toy layers with **one feature each** and their own attribute tables:
 
 | Layer | Shape in the figure | Stands for | Attribute table |
@@ -16,7 +16,7 @@ Before the real data, two toy layers with **one feature each** and their own att
 Each panel applies one operation to A and B. The **teal area is the geometry of the result**; the grey line under each panel lists the **columns of the result's attribute table**. The cell prints both input tables first and every result table after the figure.
 """
 INTRO_22_ZH = r"""
-### 2.2 用两个简单图形演示六种操作（第 13 页）
+### 2.2 用两个简单图形演示六种操作（第 12 页）
 在用真实数据之前，先看两个示意图层，**每层只有一个要素**，各自带一张属性表：
 
 | 图层 | 图中的形状 | 代表什么 | 属性表 |
@@ -33,7 +33,7 @@ READS = [
 - **Data:** % of residents below the poverty line (ACS 2018–2022) for the **3,107 counties of the contiguous United States** (48 states + DC). Nantucket MA and San Juan WA are dropped because, as islands, they touch no other county.
 - **What we did:**
   - **(a)** maps the real rates in five equal-count classes (quintiles).
-  - **The shuffle test (slide 10):** keep all 3,107 rates but hand them to the counties in random order — the same numbers with the geography removed. **(b)** maps one such shuffle with the same colours.
+  - **The shuffle test (slide 9):** keep all 3,107 rates but hand them to the counties in random order — the same numbers with the geography removed. **(b)** maps one such shuffle with the same colours.
   - **(c)** compares the two maps' histograms; **(d)** plots each county's rate against the **average rate of the counties it touches** (the *spatial lag*; neighbours share an edge or a corner, "queen" rule) for both maps; **(e)** repeats the shuffle 999 times and records r each time.
 - **What it shows:**
   - **(a) vs (b) — the eye sees it at once.** The real map has large, solid regions: high poverty across the Mississippi Delta and the Deep South, Appalachian Kentucky, the Rio Grande border of Texas and New Mexico, and Native American reservations in South Dakota and the Southwest; low poverty across the Upper Midwest and around big East-Coast metros. The shuffled map is salt-and-pepper with no regions.
@@ -45,7 +45,7 @@ READS = [
 - **数据：** **美国本土 3,107 个县**（48 州加华盛顿特区）的贫困率（贫困线以下人口占比，ACS 2018–2022）。马萨诸塞州的楠塔基特县和华盛顿州的圣胡安县是海岛，不与任何县相邻，因此被剔除。
 - **做了什么：**
   - **(a)** 把真实贫困率按五分位（每一档县数相同）上色。
-  - **随机打乱检验（课件第 10 页）：** 3,107 个数值不变，但随机分配给各县——数值完全相同、地理位置被打乱的"假地图"。**(b)** 用相同配色画出打乱一次后的地图。
+  - **随机打乱检验（课件第 9 页）：** 3,107 个数值不变，但随机分配给各县——数值完全相同、地理位置被打乱的"假地图"。**(b)** 用相同配色画出打乱一次后的地图。
   - **(c)** 比较两张地图的直方图；**(d)** 对两张地图分别画"每个县的贫困率 vs **与它相邻各县的平均贫困率**"（即"空间滞后"；邻接按 queen 规则：共边或共点即为邻居）；**(e)** 打乱 999 次，每次记录 r。
 - **结论：**
   - **(a) 和 (b) 一眼就能分出来。** 真实地图上有成片的区域：密西西比三角洲和南方腹地、肯塔基州的阿巴拉契亚山区、得克萨斯和新墨西哥的格兰德河边境、南达科他州和西南部的印第安保留地是成片的高贫困区；中西部北部（明尼苏达、艾奥瓦、内布拉斯加等）和东海岸大城市周边是成片的低贫困区。打乱后的地图则像撒了一把椒盐，看不出任何区域。
@@ -57,12 +57,12 @@ READS = [
 **Reading the figure**
 - **Data:** the two toy layers in the table above — A, a square forest stand (`A_name`, `A_ha`); B, a circular reserve (`B_zone`, `B_gap`) overlapping A's right half. Not real places.
 - **What we did:** applied each operation to A and B with GeoPandas (`gpd.clip`, `gpd.overlay(how=...)`) and drew the result in teal; the printout above lists every result's rows and values.
-- **What it shows:** **Clip and Intersect produce the same half-disc** (where A and B overlap), but Clip's table has only A's columns while Intersect's has A's *and* B's — only Intersect can tell you which reserve, and which GAP status, a piece of forest falls in. **Erase** keeps the part of A outside B. **Union** keeps everything, cut into pieces at every edge (B's columns are empty where only A exists, and vice versa). **Identity** keeps all of A, split where B covers it. **Symmetric difference** keeps everything except the overlap.
+- **What it shows:** **Clip and Intersect produce the same half-disc** (where A and B overlap), but Clip's table has only A's columns while Intersect's has A's *and* B's — only Intersect can tell you which reserve, and which GAP status, a piece of forest falls in. **Erase** keeps the part of A outside B. **Union** keeps everything, cut into pieces at every edge (B's columns are empty where only A exists, and vice versa). **Identity** keeps all of A, split where B covers it. **Update** keeps A outside B and replaces the overlap with B — shape *and* attributes — so the result also covers B's part outside A.
 """, r"""
 **读图说明**
 - **数据：** 上表中的两个示意图层——A 是正方形林地（属性 `A_name`、`A_ha`），B 是盖住 A 右半部分的圆形保护区（属性 `B_zone`、`B_gap`）。它们不是真实地点。
 - **做了什么：** 用 GeoPandas（`gpd.clip`、`gpd.overlay(how=...)`）对 A 和 B 分别执行六种操作，结果画成青色；上方打印出每种结果的行和属性值。
-- **结论：** **Clip 和 Intersect 得到的形状完全相同**（A 与 B 重叠的半圆），但 Clip 的属性表只有 A 的列，Intersect 则同时有 A 和 B 的列——只有 Intersect 能告诉你一块林地落在哪个保护区、属于哪个 GAP 等级。**Erase** 保留 A 在 B 以外的部分。**Union** 保留全部区域，并在每条边界处切开（只有 A 的地方 B 的列为空，反之亦然）。**Identity** 保留 A 的全部，并在被 B 覆盖处切开。**Symmetric difference（对称差）** 保留除重叠部分以外的全部区域。
+- **结论：** **Clip 和 Intersect 得到的形状完全相同**（A 与 B 重叠的半圆），但 Clip 的属性表只有 A 的列，Intersect 则同时有 A 和 B 的列——只有 Intersect 能告诉你一块林地落在哪个保护区、属于哪个 GAP 等级。**Erase** 保留 A 在 B 以外的部分。**Union** 保留全部区域，并在每条边界处切开（只有 A 的地方 B 的列为空，反之亦然）。**Identity** 保留 A 的全部，并在被 B 覆盖处切开。**Update（更新）** 保留 A 在 B 以外的部分，把重叠部分换成 B——几何和属性都换——所以结果也包括 B 在 A 以外的部分。
 """),
 ('print(f"inputs: {len(Acty)} counties', r"""
 **Reading the table**
