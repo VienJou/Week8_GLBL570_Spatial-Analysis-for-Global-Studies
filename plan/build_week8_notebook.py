@@ -53,7 +53,7 @@ Week 7 asked **"what is where?"** This week the map becomes an **instrument**: c
 
 **Every analytical section ends with a line beginning `CANNOT ESTABLISH:`** — what the result does not show. Spatial analysis does not remove analytical choices; it makes them consequential.
 
-Run from the repository root (it needs `notebook_data/` and `lab_data_week8/`). CPU only, no internet. Needs `scikit-learn` (§5) in addition to the Week 7 libraries.
+Run from the repository root (it needs `notebook_data_week7/` and `notebook_data_week8/`). CPU only, no internet. Needs `scikit-learn` (§5) in addition to the Week 7 libraries.
 """)
 code(r"""
 import os, warnings
@@ -84,8 +84,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import confusion_matrix, accuracy_score
 
-LAB, LAB8 = Path("notebook_data"), Path("lab_data_week8")
-assert LAB.exists() and LAB8.exists(), "Run from the repository root: notebook_data/ and lab_data_week8/ must be next to this notebook."
+LAB, LAB8 = Path("notebook_data_week7"), Path("notebook_data_week8")
+assert LAB.exists() and LAB8.exists(), "Run from the repository root: notebook_data_week7/ and notebook_data_week8/ must be next to this notebook."
 VEC, TAB, RAS = LAB / "vector", LAB / "tables", LAB / "raster"            # Week 7 layers reused here
 VEC8, TAB8, RAS8 = LAB8 / "vector", LAB8 / "tables", LAB8 / "raster"      # Week 8 additions
 OUT = Path("outputs"); OUT.mkdir(exist_ok=True)
@@ -140,10 +140,10 @@ print("geopandas", gpd.__version__, "| shapely", shapely.__version__, "| rasteri
 """)
 md(r"""
 ### 0.1 The data pack
-`notebook_data/` holds the Week 7 layers this notebook reuses (counties with ACS data, states, earthquakes, world countries, UCDP 2023 events, the Champaign Sentinel-2 scene and the Illinois NLCD); `notebook_data/README.md` describes them. `lab_data_week8/` adds the Week 8 layers; `lab_data_week8/README.md` lists source, licence, CRS and pitfalls for each.
+`notebook_data_week7/` holds the Week 7 layers this notebook reuses (counties with ACS data, states, earthquakes, world countries, UCDP 2023 events, the Champaign Sentinel-2 scene and the Illinois NLCD); `notebook_data_week7/README.md` describes them. `notebook_data_week8/` adds the Week 8 layers; `notebook_data_week8/README.md` lists source, licence, CRS and pitfalls for each.
 """, r"""
 ### 0.1 数据包
-`notebook_data/` 存放本 notebook 复用的第 7 周图层（带 ACS 数据的县、州、地震、世界各国、UCDP 2023 冲突事件、香槟市 Sentinel-2 影像和伊利诺伊州 NLCD），说明见 `notebook_data/README.md`。`lab_data_week8/` 补充了第 8 周的图层；每个图层的来源、许可、坐标系和注意事项见 `lab_data_week8/README.md`。
+`notebook_data_week7/` 存放本 notebook 复用的第 7 周图层（带 ACS 数据的县、州、地震、世界各国、UCDP 2023 冲突事件、香槟市 Sentinel-2 影像和伊利诺伊州 NLCD），说明见 `notebook_data_week7/README.md`。`notebook_data_week8/` 补充了第 8 周的图层；每个图层的来源、许可、坐标系和注意事项见 `notebook_data_week8/README.md`。
 """)
 code(r"""
 HOW = {".shp": "drag & drop (vector)", ".tif": "drag & drop (raster)", ".csv": "Add Delimited Text Layer"}

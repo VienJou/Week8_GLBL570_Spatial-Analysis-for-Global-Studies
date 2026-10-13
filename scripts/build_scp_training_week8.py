@@ -1,10 +1,10 @@
 """Ready-made training and validation areas for the Week 8 SCP image-classification task (Champaign–Urbana).
 
-  lab_data_week8/raster/champaign_nlcd2021_30m.tif         NLCD 2021, native 30 m grid, Sentinel-2 scene extent
-  lab_data_week8/raster/champaign_sentinel2_2023spring_10m.tif   Sentinel-2 L2A median Apr–May 2023, bands R,G,B,NIR,
+  notebook_data_week8/raster/champaign_nlcd2021_30m.tif         NLCD 2021, native 30 m grid, Sentinel-2 scene extent
+  notebook_data_week8/raster/champaign_sentinel2_2023spring_10m.tif   Sentinel-2 L2A median Apr–May 2023, bands R,G,B,NIR,
                                                            on the same 10 m grid as the Week 7 summer scene
-  lab_data_week8/vector/champaign_training_rois.gpkg       training polygons for SCP  (Import vector)
-  lab_data_week8/vector/champaign_validation_rois.gpkg     separate polygons for SCP  (Postprocessing ▸ Accuracy)
+  notebook_data_week8/vector/champaign_training_rois.gpkg       training polygons for SCP  (Import vector)
+  notebook_data_week8/vector/champaign_validation_rois.gpkg     separate polygons for SCP  (Postprocessing ▸ Accuracy)
 
 Each polygon is a 90 m square (3 × 3 NLCD cells, 9 × 9 Sentinel-2 pixels) whose nine NLCD cells all belong to the same
 macroclass, so no polygon straddles a class boundary. Fields follow the SCP v8 import convention:
@@ -34,8 +34,8 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 
 ROOT = Path(__file__).resolve().parents[1]
-S2 = ROOT / "notebook_data" / "raster" / "champaign_sentinel2_2023_10m.tif"
-OUT_R, OUT_V = ROOT / "lab_data_week8" / "raster", ROOT / "lab_data_week8" / "vector"
+S2 = ROOT / "notebook_data_week7" / "raster" / "champaign_sentinel2_2023_10m.tif"
+OUT_R, OUT_V = ROOT / "notebook_data_week8" / "raster", ROOT / "notebook_data_week8" / "vector"
 NLCD30 = OUT_R / "champaign_nlcd2021_30m.tif"
 SPRING = OUT_R / "champaign_sentinel2_2023spring_10m.tif"
 NLCD_X0, NLCD_Y0, RES = -2493045.0, 3310005.0, 30.0            # CONUS NLCD 30 m grid origin (EPSG:5070)
@@ -104,7 +104,7 @@ print(f"{NLCD30.name}: {nlcd.shape[1]}x{nlcd.shape[0]} cells; classes {dict(zip(
 macro = np.zeros_like(nlcd)
 for mid, (_, codes) in MACRO.items():
     macro[np.isin(nlcd, codes)] = mid
-labels = pd.read_csv(ROOT / "notebook_data" / "raster" / "nlcd_classes.csv").set_index("value").label.to_dict()
+labels = pd.read_csv(ROOT / "notebook_data_week7" / "raster" / "nlcd_classes.csv").set_index("value").label.to_dict()
 rows = []
 for mid, (mname, _) in MACRO.items():
     same = ndimage.minimum_filter((macro == mid).astype(np.uint8), size=3, mode="constant") == 1

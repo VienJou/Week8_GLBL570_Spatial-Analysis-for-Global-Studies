@@ -2,7 +2,7 @@
 README at the root, then a ZIP for Canvas. Students need nothing from the Week 7 download.
 
 Run from the repo root:  python scripts/make_lab_package_week8.py
-Inputs:  notebook_data/ (Week 7 layers), lab_data_week8/, plan/week8_memo_template_student.md, plan/week8_lab_package_README.md, GLBL570_Week8_Lab_Guide.pdf
+Inputs:  notebook_data_week7/ (Week 7 layers), notebook_data_week8/, plan/week8_memo_template_student.md, plan/week8_lab_package_README.md, GLBL570_Week8_Lab_Guide.pdf
 Output:  GLBL570_Week8_Lab/  and  GLBL570_Week8_Lab.zip
 """
 import shutil
@@ -12,7 +12,7 @@ from pathlib import Path
 import rasterio
 
 ROOT = Path(__file__).resolve().parents[1]
-W7, W8 = ROOT / "notebook_data", ROOT / "lab_data_week8"
+W7, W8 = ROOT / "notebook_data_week7", ROOT / "notebook_data_week8"
 PKG = ROOT / "GLBL570_Week8_Lab"
 SHP = (".shp", ".shx", ".dbf", ".prj", ".cpg")
 

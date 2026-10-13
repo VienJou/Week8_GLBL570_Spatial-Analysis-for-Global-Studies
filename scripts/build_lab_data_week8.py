@@ -1,4 +1,4 @@
-"""Build lab_data_week8/ (vectors and tables) for the Week 8 spatial-analysis notebook.
+"""Build notebook_data_week8/ (vectors and tables) for the Week 8 spatial-analysis notebook.
 
   vector/focus_counties_pnw.shp         6 counties around Mt Hood / Columbia Gorge (from the Week 7 pack)
   vector/padus41_mthood_gorge.shp       PAD-US 4.1 protected areas intersecting the focus area (USGS GAP)
@@ -19,8 +19,8 @@ import pandas as pd
 import requests
 
 ROOT = Path(__file__).resolve().parents[1]
-W7 = ROOT / "lab_data"
-OUT = ROOT / "lab_data_week8"
+W7 = ROOT / "notebook_data_week7"
+OUT = ROOT / "notebook_data_week8"
 VEC, TAB = OUT / "vector", OUT / "tables"
 for d in (VEC, TAB):
     d.mkdir(parents=True, exist_ok=True)

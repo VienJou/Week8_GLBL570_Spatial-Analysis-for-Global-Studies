@@ -1,9 +1,9 @@
 """Download the Week 8 rasters for the Mt Hood / Columbia Gorge focus area from Google Earth Engine.
 
-  lab_data_week8/raster/focus_nlcd2021_30m.tif   NLCD 2021 land cover, raw class codes, uint8 + colour table,
+  notebook_data_week8/raster/focus_nlcd2021_30m.tif   NLCD 2021 land cover, raw class codes, uint8 + colour table,
                                                  on the native NLCD 30 m grid (EPSG:5070)
-  lab_data_week8/raster/focus_srtm_90m.tif       SRTM elevation (m), int16, 90 m, EPSG:5070
-  lab_data_week8/raster/nlcd_classes.csv         value -> label table (value attribute table)
+  notebook_data_week8/raster/focus_srtm_90m.tif       SRTM elevation (m), int16, 90 m, EPSG:5070
+  notebook_data_week8/raster/nlcd_classes.csv         value -> label table (value attribute table)
 
 Needs an Earth Engine service-account key: set GEE_KEY (path to JSON) and GEE_PROJECT.
 Run after build_lab_data_week8.py, from the repository root:  python scripts/fetch_rasters_gee_week8.py
@@ -22,7 +22,7 @@ from google.oauth2 import service_account
 from rasterio.features import geometry_mask
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "lab_data_week8" / "raster"
+OUT = ROOT / "notebook_data_week8" / "raster"
 OUT.mkdir(parents=True, exist_ok=True)
 CRS = "EPSG:5070"
 NLCD_X0, NLCD_Y0 = -2493045.0, 3310005.0                 # origin of the CONUS NLCD 30 m grid (EPSG:5070)
@@ -31,7 +31,7 @@ cred = service_account.Credentials.from_service_account_file(
     os.environ["GEE_KEY"], scopes=["https://www.googleapis.com/auth/earthengine"])
 ee.Initialize(cred, project=os.environ["GEE_PROJECT"])
 
-focus = gpd.read_file(ROOT / "lab_data_week8" / "vector" / "focus_counties_pnw.shp").to_crs(CRS)
+focus = gpd.read_file(ROOT / "notebook_data_week8" / "vector" / "focus_counties_pnw.shp").to_crs(CRS)
 area = focus.union_all()
 
 

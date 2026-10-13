@@ -1,6 +1,6 @@
 # GLBL 570 · Week 7 lab data (QGIS-ready)
 
-> **In this repository this folder is called `notebook_data/`.** It is the Week 7 data pack, unchanged; the Week 8 notebook reads
+> **In this repository this folder is called `notebook_data_week7/`** (it was `lab_data/` in the Week 7 repository). It is the Week 7 data pack, unchanged; the Week 8 notebook reads
 > `us_counties_acs2022.shp`, `us_states.shp`, `usgs_earthquakes_2025_m25.shp`, `world_countries_ne110m.shp`, `ucdp_ged_events_2023.csv`,
 > `champaign_sentinel2_2023_10m.tif`, `illinois_landcover_nlcd2021_150m.tif` and `nlcd_classes.csv` from it. Students doing the lab need
 > only `GLBL570_Week8_Lab/`.
