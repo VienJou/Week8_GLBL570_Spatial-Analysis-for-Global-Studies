@@ -14,6 +14,7 @@ Companion notebook, lab materials and data for Week 8 (Module 4, GIS weeks 7–8
 |---|---|
 | `GLBL570_Week8_Spatial_Analysis_Lab.ipynb` | The notebook, saved with outputs (English) |
 | `GLBL570_Week8_Lab/` | **Student lab package** — `README.md` (schedule and files), `GLBL570_Week8_Lab_Guide.pdf`, and data folders `Task1_Overlay/`, `Task2_Buffer/`, `Task3_Image_Classification/`, `Task4_Memo/`, `Extensions/`. Nothing else needs to be downloaded |
+| `GLBL570_Week8_Lab.zip` | The same lab package as one download (43 MB) — give this to students; it unzips to `GLBL570_Week8_Lab/` |
 | `GLBL570_Week8_Lab_Guide.pdf` | The 7-page lab guide: the files each task uses, and exact QGIS / SCP steps with self-check numbers for Tasks 1–4 |
 | `notebook_data_week8/` | Week 8 data: PAD-US 4.1 protected areas, NLCD 2021 and SRTM for Mount Hood – Columbia Gorge, Cox's Bazar camp outlines, UCDP events near the camps, and for the classification task a spring Sentinel-2 scene, 30 m NLCD and ready-made training / validation areas. See `notebook_data_week8/README.md`. Used by the notebook; the lab package has its own copies, so students do not need this folder |
 | `notebook_data_week7/` | Week 7 layers the notebook reuses (U.S. counties + ACS, states, earthquakes, world countries, UCDP 2023, Illinois NLCD, Champaign Sentinel-2) — the Week 7 data pack, renamed. See `notebook_data_week7/README.md`. Not needed for the lab |

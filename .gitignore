@@ -8,3 +8,4 @@ outputs/week8_outputs.gpkg
 *.zip
 # Chinese review copy of the notebook is kept locally, not distributed
 GLBL570_Week8_Spatial_Analysis_Lab_zh.ipynb
+!GLBL570_Week8_Lab.zip
