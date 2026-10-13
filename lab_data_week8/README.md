@@ -15,6 +15,10 @@ All open in QGIS 3.x without plug-ins. Built by `scripts/build_lab_data_week8.py
 | `raster/focus_nlcd2021_30m.tif` | uint8, 1 band + colour table | EPSG:5070 | NLCD 2021 land cover, **raw class codes**, on the native CONUS NLCD 30 m grid; 0 = outside the focus area |
 | `raster/focus_srtm_90m.tif` | int16, 1 band | EPSG:5070 | SRTM elevation (m), 90 m; −32768 = outside the focus area |
 | `raster/nlcd_classes.csv` | table | — | NLCD class value → label (value attribute table) |
+| `raster/champaign_nlcd2021_30m.tif` | uint8, 1 band + colour table | EPSG:5070 | NLCD 2021, native 30 m grid, covering the Champaign Sentinel-2 scene (source of the classification labels) |
+| `raster/champaign_sentinel2_2023spring_10m.tif` | uint16, 4 bands | EPSG:5070 | Sentinel-2 L2A median, Apr–May 2023, bands 1–4 = red, green, blue, NIR (× 10,000), on the same 10 m grid as the Week 7 summer scene |
+| `vector/champaign_training_rois.gpkg` | polygons, 154 | EPSG:5070 | Classification training squares (90 × 90 m, one NLCD macroclass each): fields `macroclass_id`, `macroclass_name`, `class_id`, `class_name` for SCP *Import vector* |
+| `vector/champaign_validation_rois.gpkg` | polygons, 120 | EPSG:5070 | Separate check squares, ≥ 300 m from any training square, same fields |
 
 Reused from the Week 7 pack: `us_counties_acs2022.shp` (Oregon/Washington/Idaho counties for §4), `usgs_earthquakes_2025_m25.shp`,
 `world_countries_ne110m.shp`, `ucdp_ged_events_2023.csv`, the Champaign Sentinel-2 scene and the Illinois NLCD (for §5).
@@ -53,4 +57,7 @@ variables `GEE_KEY` (path to the JSON key) and `GEE_PROJECT`. Never commit the k
 - **UCDP location precision (`where_prec`).** Of the 410 events, 233 are precision 5 (known only to a wider area). Every event within 5 km of
   a camp is precision 1–2; three precision-5 events lie 5–10 km away. The camp-share results in the notebook are identical when only
   precise events (precision 1–2) are used — check this again if you change the radii or the region.
+- **Classification squares** come from `scripts/build_scp_training_week8.py`: 5 macroclasses (1 Water = 11 · 2 Developed = 22–24 · 3 Forest = 41–43 ·
+  4 Grass and pasture = 71, 81 · 5 Cropland = 82); NLCD 21 (developed, open space) is left out because it is mostly lawn. A random forest on the
+  summer bands alone reaches 0.66 validation accuracy; adding the spring bands gives 0.81 (cropland recall 0.56 → 0.88). Labels are 2021, imagery 2023.
 - **SRTM** has a few small negative values along the Columbia River (artefacts). **NLCD** is a 2021 snapshot.

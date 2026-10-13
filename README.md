@@ -1,36 +1,60 @@
-# GLBL 570 Week 8: Spatial Analysis for Global Studies (companion notebook + lab data)
+# GLBL 570 · Methodologies of Global Studies — Week 8: Spatial Analysis for Global Studies
 
-`GLBL570_Week8_Spatial_Analysis_Lab.ipynb` follows the eight chapters of the Week 8 lecture (overlay · buffer and proximity ·
-clusters and hotspots · remote sensing and machine learning · the politics of categories · discussion · lab) and writes the
-15 figures the lecture deck uses into `outputs/`. Every analytical section ends with a `CANNOT ESTABLISH:` line naming what
-the result does not show.
+Companion notebook, lab materials and data for Week 8 (Module 4, GIS weeks 7–8).
+
+- **`GLBL570_Week8_Spatial_Analysis_Lab.ipynb`** follows the eight chapters of the Week 8 lecture (from mapping to analysis ·
+  overlay · buffer and proximity · clusters and hotspots · remote sensing and machine learning · the politics of categories ·
+  discussion · lab) and writes the 16 figures the lecture deck uses into `outputs/`. Every figure is followed by a
+  "Reading the figure" cell (data · what we did · what it shows), and every analytical section ends with a `CANNOT ESTABLISH:` line.
+- **`GLBL570_Week8_Spatial_Analysis_Lab_zh.ipynb`** is the same notebook with the explanations in Chinese (code and outputs identical).
+- **`GLBL570_Week8_Lab/`** is the self-contained hands-on lab (GIS Workshop II) for students: one folder per task, the lab guide and a README.
 
 ## Contents
 
 | Path | What it is |
 |---|---|
-| `GLBL570_Week8_Spatial_Analysis_Lab.ipynb` | The notebook (saved with outputs) |
-| `lab_data_week8/` | Week 8 additions: PAD-US 4.1 protected areas and NLCD 2021 / SRTM rasters for Mount Hood–Columbia Gorge, Cox's Bazar refugee-camp outlines, UCDP conflict events near the camps. See `lab_data_week8/README.md` (sources, licences, CRS, pitfalls) |
-| `lab_data/` | The Week 7 data pack, unchanged (U.S. counties + ACS, earthquakes, world countries, UCDP 2023, Illinois rasters, Champaign Sentinel-2). See `lab_data/README.md`; built by the Week 7 repository [GLBL570-Week7-GIS](https://github.com/VienJou/GLBL570-Week7-GIS) |
-| `outputs/` | The 15 lecture figures (PNG, 220 dpi; PDF for line-work figures) and the memo template |
-| `scripts/` | Rebuild `lab_data_week8/` (`build_lab_data_week8.py`; rasters: `fetch_rasters_gee_week8.py`) |
-| `requirements.txt` | Python libraries (includes scikit-learn for §5) |
+| `GLBL570_Week8_Spatial_Analysis_Lab.ipynb` | The notebook, saved with outputs (English) |
+| `GLBL570_Week8_Spatial_Analysis_Lab_zh.ipynb` | Same notebook, explanations in Chinese |
+| `GLBL570_Week8_Lab/` | **Student lab package** — `README.md` (schedule and files), `GLBL570_Week8_Lab_Guide.pdf`, and data folders `Task1_Overlay/`, `Task2_Buffer/`, `Task3_Image_Classification/`, `Task4_Memo/`, `Extensions/`. Nothing else needs to be downloaded |
+| `GLBL570_Week8_Lab_Guide.pdf` | The 16-page lab guide: exact QGIS / SCP steps and self-check numbers for each task |
+| `lab_data_week8/` | Week 8 data: PAD-US 4.1 protected areas, NLCD 2021 and SRTM for Mount Hood – Columbia Gorge, Cox's Bazar camp outlines, UCDP events near the camps, and for the classification task a spring Sentinel-2 scene, 30 m NLCD and ready-made training / validation areas. See `lab_data_week8/README.md` |
+| `lab_data/` | The Week 7 data pack, unchanged (U.S. counties + ACS, earthquakes, world countries, UCDP 2023, Illinois rasters, Champaign Sentinel-2). See `lab_data/README.md` |
+| `outputs/` | The 16 lecture figures (PNG, 220 dpi; PDF for line-work figures) and the memo the notebook fills in |
+| `scripts/` | Rebuild the data: `build_lab_data_week8.py` (vectors, tables), `fetch_rasters_gee_week8.py` (rasters), `build_scp_training_week8.py` (spring scene, 30 m NLCD, training and validation areas), `make_lab_package_week8.py` (assembles `GLBL570_Week8_Lab/`) |
+| `plan/` | Regenerate the notebooks: `build_week8_notebook.py` (builds the English notebook; reading texts in `week8_reads.py`) and `make_week8_zh.py` (Chinese copy); source files for the lab package README and memo template |
+| `requirements.txt` | Python libraries (includes scikit-learn) |
 
-## Run
-* CPU only, no internet needed. Full run ≈ 3.5–5 minutes.
+## Run the notebook
+* CPU only, no internet needed. A full run takes about 5–7 minutes.
 * Tested on Python 3.9 (NumPy 1.26) and Python 3.12 (NumPy 2.5, pandas 3.0). On I-GUIDE use the `geoai-edu` kernel.
 * `pip install -r requirements.txt`, open the notebook **from the repository root** (paths are relative), then *Run All*.
-* The last cell checks that all 15 figures were written and prints the headline numbers for the lecture.
-* Rebuilding the data is optional: `requests` for `build_lab_data_week8.py`; `earthengine-api`, `google-auth` and an
-  Earth Engine key (`GEE_KEY`, `GEE_PROJECT` environment variables) for `fetch_rasters_gee_week8.py`.
+* The last cell checks that all 16 figures were written and prints the headline numbers for the lecture.
 
-## Figures (deck slide → file in `outputs/`)
-17 `overlay_operations` · 18 `overlay_policy_forest_protected` · 21 `distance_to_water_development` · 23 `buffer_sensitivity` ·
-24 `proximity_toolbox` · 25 `data_preprocessing_dissolve_integrate` · 27 `clusters_moran_lisa` · 28 `spatial_correlation_two_variables` ·
-33 `hotspots_getis_ord` · 34 `point_pattern_nn` · 37 `rs_ndvi_classification` · 41 `ml_confusion_matrix` ·
-43 `categories_forest_definitions` · 45 `maup_two_aggregations` · 46 `ethics_point_vs_aggregated`
+## The lab (GIS Workshop II, 60 minutes)
+
+| Time | Task | Folder |
+|---|---|---|
+| 0–15′ | Task 1 · Overlay — forest × PAD-US protected areas around Mount Hood: how much forest is protected (GAP 1–2 vs GAP 1–3)? | `Task1_Overlay/` |
+| 15–30′ | Task 2 · Buffer — how many of the 33 Rohingya camps lie within 1 / 5 / 10 km of a 2023 conflict event? | `Task2_Buffer/` |
+| 30–45′ | Task 3 · Image classification with the QGIS SCP plug-in — random forest on Sentinel-2, summer only vs summer + spring (validation accuracy ≈ 0.66 vs ≈ 0.81) | `Task3_Image_Classification/` |
+| 45–55′ | Task 4 · Export the result map(s) and write a 200–300-word memo with one policy implication | `Task4_Memo/` |
+| after class | Optional extensions: A · Moran's I / LISA / Gi* (GeoDa) · C · OSINT aggregation of conflict events | `Extensions/` |
+
+Give students `GLBL570_Week8_Lab/` (or the ZIP made by `python scripts/make_lab_package_week8.py`). They need QGIS 3.28+,
+the Semi-Automatic Classification Plugin with scikit-learn (Task 3), and GeoDa only for Extension A.
+
+## Figures (lecture deck v4 slide → file in `outputs/`)
+10 `spatial_shuffle_test` · 13 `overlay_operations` · 14 `overlay_policy_forest_protected` · 18 `distance_to_water_development` ·
+19 `proximity_toolbox` · 20 `buffer_sensitivity` · 21 `data_preprocessing_dissolve_integrate` · 25 `clusters_moran_lisa` ·
+26 `hotspots_getis_ord` · 27 `point_pattern_nn` · 29 `spatial_correlation_two_variables` · 32 `rs_ndvi_classification` ·
+36 `ml_confusion_matrix` · 40 `categories_forest_definitions` · 41 `maup_two_aggregations` · 43 `ethics_point_vs_aggregated`
+
+## Rebuilding the data (optional)
+`requests` for `build_lab_data_week8.py`; `earthengine-api`, `google-auth` and an Earth Engine service-account key for
+`fetch_rasters_gee_week8.py` and `build_scp_training_week8.py` — set the environment variables `GEE_KEY` (path to the JSON key)
+and `GEE_PROJECT`. Never commit the key.
 
 ## Data sources
 USGS PAD-US 4.1; USGS/MRLC NLCD 2021; NASA/USGS SRTM; ISCG/RRRC Rohingya camp outlines (HDX, CC0); UCDP GED v24.1 (CC BY 4.0);
-U.S. Census Bureau ACS 2018–2022 and boundaries; USGS Earthquake Catalog 2025; Natural Earth; Copernicus Sentinel-2.
-Licences and caveats are listed in the two data READMEs.
+U.S. Census Bureau ACS 2018–2022 and boundaries; USGS Earthquake Catalog 2025; Natural Earth; Copernicus Sentinel-2 (2023).
+Licences and caveats are listed in the data READMEs.

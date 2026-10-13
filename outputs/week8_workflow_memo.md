@@ -11,7 +11,7 @@
 ## Operations and results
 1. Overlay: 14.0% of forest is inside GAP 1–2 (1,377 of 9,860 km²); 73.3% inside GAP 1–3.
 2. Buffer: 64%–100% of the 33 Cox's Bazar camps are "near conflict" for radii 1–100 km.
-3. Clustering: Moran's I = 0.090 (pseudo p = 0.041, queen weights, 999 permutations, 118 PNW counties).
+3. Clustering: Moran's I = 0.496 (pseudo p = 0.001, queen weights, 999 permutations, 3,107 contiguous-U.S. counties).
 4. Classification: overall accuracy 0.68; weakest class Barren land (rock/sand/clay) (recall 0.00).
 
 ## One policy implication
