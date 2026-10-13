@@ -1,6 +1,6 @@
-# GLBL 570 · Week 8 lab data (additions to the Week 7 pack)
+# GLBL 570 · Week 8 lab data
 
-These layers sit beside the Week 7 `lab_data/` (which is unchanged) and feed `../GLBL570_Week8_Spatial_Analysis_Lab.ipynb`.
+These layers sit beside `notebook_data/` (the Week 7 layers the notebook reuses) and feed `../GLBL570_Week8_Spatial_Analysis_Lab.ipynb`.
 All open in QGIS 3.x without plug-ins. Built by `scripts/build_lab_data_week8.py` (vectors, tables) and
 `scripts/fetch_rasters_gee_week8.py` (rasters). Total size ≈ 11 MB; no file exceeds 5 MB.
 
@@ -20,8 +20,7 @@ All open in QGIS 3.x without plug-ins. Built by `scripts/build_lab_data_week8.py
 | `vector/champaign_training_rois.gpkg` | polygons, 154 | EPSG:5070 | Classification training squares (90 × 90 m, one NLCD macroclass each): fields `macroclass_id`, `macroclass_name`, `class_id`, `class_name` for SCP *Import vector* |
 | `vector/champaign_validation_rois.gpkg` | polygons, 120 | EPSG:5070 | Separate check squares, ≥ 300 m from any training square, same fields |
 
-Reused from the Week 7 pack: `us_counties_acs2022.shp` (Oregon/Washington/Idaho counties for §4), `usgs_earthquakes_2025_m25.shp`,
-`world_countries_ne110m.shp`, `ucdp_ged_events_2023.csv`, the Champaign Sentinel-2 scene and the Illinois NLCD (for §5).
+Reused from `notebook_data/` (the Week 7 pack): `us_counties_acs2022.shp` (contiguous-U.S. counties for §1 and §4), `us_states.shp`, `usgs_earthquakes_2025_m25.shp`, `world_countries_ne110m.shp`, `ucdp_ged_events_2023.csv`, the Champaign Sentinel-2 scene and the Illinois NLCD (§5).
 
 ## Sources and licences
 

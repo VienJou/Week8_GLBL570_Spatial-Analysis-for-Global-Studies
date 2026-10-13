@@ -34,7 +34,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 
 ROOT = Path(__file__).resolve().parents[1]
-S2 = ROOT / "lab_data" / "raster" / "champaign_sentinel2_2023_10m.tif"
+S2 = ROOT / "notebook_data" / "raster" / "champaign_sentinel2_2023_10m.tif"
 OUT_R, OUT_V = ROOT / "lab_data_week8" / "raster", ROOT / "lab_data_week8" / "vector"
 NLCD30 = OUT_R / "champaign_nlcd2021_30m.tif"
 SPRING = OUT_R / "champaign_sentinel2_2023spring_10m.tif"
@@ -104,7 +104,7 @@ print(f"{NLCD30.name}: {nlcd.shape[1]}x{nlcd.shape[0]} cells; classes {dict(zip(
 macro = np.zeros_like(nlcd)
 for mid, (_, codes) in MACRO.items():
     macro[np.isin(nlcd, codes)] = mid
-labels = pd.read_csv(ROOT / "lab_data" / "raster" / "nlcd_classes.csv").set_index("value").label.to_dict()
+labels = pd.read_csv(ROOT / "notebook_data" / "raster" / "nlcd_classes.csv").set_index("value").label.to_dict()
 rows = []
 for mid, (mname, _) in MACRO.items():
     same = ndimage.minimum_filter((macro == mid).astype(np.uint8), size=3, mode="constant") == 1
